@@ -54,18 +54,22 @@ body{
 .btn-thm-1{
     background-color: var(--primary10);
     border: 2px solid var(--primary10);
+    color: var(--secondary20);
 }
 .btn-thm-2{
     background-color: var(--primary20);
     border: 2px solid var(--primary20);
+    color: var(--secondary20);
 }
 .btn-thm-3{
     background-color: var(--primary30);
     border: 2px solid var(--primary30);
+    color: var(--secondary20);
 }
 .btn-thm-4{
     background-color: var(--primary40);
     border: 2px solid var(--primary40);
+    color: var(--secondary20);
 }
 .btn-del{
     background-color: #ff094e;
@@ -78,6 +82,53 @@ body{
 .btn-success{
     background-color: #00fa53;
     border: 2px solid #00fa53;
+}
+.btn-thm-1.outline{
+    background-color: transparent;
+    border: 2px solid var(--primary10);
+    color: var(--primary10);
+    transition: 0.3s;
+}
+.btn-thm-1.outline:hover{
+    background-color: var(--primary10);
+    color: var(--secondary10);
+}
+.btn-thm-2.outline{
+    background-color: transparent;
+    border: 2px solid var(--primary20);
+    color: var(--primary20);
+    transition: 0.3s;
+}
+.btn-thm-2.outline:hover{
+    background-color: var(--primary20);
+    color: var(--secondary20);
+}
+
+
+/* Links colors */
+.link-primary{
+    color: var(--primary10);
+    font-weight: 500;
+    /* text-decoration: none; */
+}
+.link-primary-dk{
+    color: var(--primary20);
+    font-weight: 500;
+    /* text-decoration: none; */
+}
+.link-secondary{
+    color: var(--secondary10);
+    font-weight: 500;
+    /* text-decoration: none; */
+}
+.link-primary:hover, .link-primary-dk:hover, .link-secondary:hover{
+    text-decoration: underline;
+}
+
+
+/* button as Links */
+.btnlink{
+    display: block;
 }
 
 
