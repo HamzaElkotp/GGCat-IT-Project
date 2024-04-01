@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+:root{
+    --bg100: #181823;
+    --bg90: #191825;
+    --bg80: #1b1927;
+    --bg70: #1d1c2a;
+    --bg60: #201e2f;
+    --bg50: #1c1a2a;
+
+    --primary10: #7c13ff;
+    --primary20: #391660;
+    --primary30: #251349;
+    --primary40: #1e1336;
+
+    --secondary10: #fff;
+    --secondary20: #eeeeee;
+    --secondary30: #d1d1d1;
+    --secondary40: #b0b0b0;
+}
+*:not(i) {
+    font-family: "Reddit Mono", monospace;
+}
+
+body{
+    background-color: var(--bg100);
+}
+
+
+
+
+/* buttons sizes*/
+.btn-sm {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.btn-se-md {
+    font-size: 14px;
+    padding: 7px 12px;
+}
+.btn-md {
+    font-size: 16px;
+    padding: 8px 14px;
+}
+.btn-lg {
+    font-size: 18px;
+    padding: 10px 16px;
+}
+.btn-fs {
+    width: 100%;
+}
+
+
+/* buttons Colors*/
+.btn-thm-1{
+    background-color: var(--primary10);
+    border: 2px solid var(--primary10);
+}
+.btn-thm-2{
+    background-color: var(--primary20);
+    border: 2px solid var(--primary20);
+}
+.btn-thm-3{
+    background-color: var(--primary30);
+    border: 2px solid var(--primary30);
+}
+.btn-thm-4{
+    background-color: var(--primary40);
+    border: 2px solid var(--primary40);
+}
+.btn-del{
+    background-color: #ff094e;
+    border: 2px solid #ff094e;
+}
+.btn-warn{
+    background-color: #fae500;
+    border: 2px solid #fae500;
+}
+.btn-success{
+    background-color: #00fa53;
+    border: 2px solid #00fa53;
+}
+
+
+/* Font Weight */
+.fw-100{
+    font-weight: 100;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+
+/* Font size */
+.ft-1{
+    font-size: 1rem;
+}
+.ft-115{
+    font-size: 1.15rem;
+}
+.ft-125{
+    font-size: 1.25rem;
+}
+.ft-135{
+    font-size: 1.35rem;
+}
+.ft-145{
+    font-size: 1.45rem;
+}
+.ft-15{
+    font-size: 1.5rem;
+}
+.ft-175{
+    font-size: 1.75rem;
+}
+.ft-185{
+    font-size: 1.85rem;
+}
+.ft-2{
+    font-size: 2rem;
+}
+
+
+/* Text colors */
+.txt-primary{
+    color: var(--primary10);
+}
+.txt-primary-dk{
+    color: var(--primary20);
+}
+.txt-primary-bl{
+    color: var(--primary40);
+}
+.txt-secondary{
+    color: var(--secondary10);
+}
+.txt-secondary-20{
+    color: var(--secondary20);
+}
+.txt-secondary-30{
+    color: var(--secondary30);
+}
+.txt-secondary-40{
+    color: var(--secondary40);
+}

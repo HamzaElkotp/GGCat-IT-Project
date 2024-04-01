@@ -1,0 +1,56 @@
+{
+    "12345": {
+        "name": "Fortnite",
+        "description": "Fortnite is a third-person shooter game where up to 100 players compete to be the last person or team standing. You can compete alone or join a team of up to four. You progress through the game by exploring the island, collecting weapons, building fortifications and engaging in combat with other players.",
+        "small_description": "Fortnite is a third-person shooter game where up to 100 players compete to be the last person or team standing.",
+        "category": "Online, Battle Royale",
+        "gamers" : 9432,
+        "imgs": {
+            "large_banners": ["/assets/images/ftnite.jpg", "/assets/images/ftnite1.webp", "/assets/images/ftnite2.jpg", "/assets/images/ftnite3.jpg"],
+            "small_banner": "/assets/images/rise.jpg"
+        },
+        "commlink": "https://discord.com/invite/fortnite",
+        "downlink": "https://store.epicgames.com/en-US/p/fortnite",
+        "review": {
+            "gameplaye": 8.3,
+            "sounds": 5.6,
+            "community": 9.5
+        }
+    },
+    "78398": {
+        "name": "Rocket League",
+        "description": "It features a competitive game mode based on teamwork and outmaneuvering opponents. Players work with their team to advance the ball down the field, and score goals in their opponents' net. Rocket League is a technical game which involves both high-level dexterity and fast-paced gameplay.",
+        "small_description": "It features a competitive game mode based on teamwork and outmaneuvering opponents.",
+        "category": "Online, vehicular soccer",
+        "gamers" : 10213,
+        "imgs": {
+            "large_banners": ["/assets/images/rocketleague.jpg", "/assets/images/rocketleague1.jpg", "/assets/images/rocketleague2.jpg", "/assets/images/rocketleague5.jpg"],
+            "small_banner": "/assets/images/rocketleague3.jpg"
+        },
+        "commlink": "https://discord.com/invite/rocketleague",
+        "downlink": "https://www.rocketleague.com/en",
+        "review": {
+            "gameplaye": 10,
+            "sounds": 7.4,
+            "community": 6.2
+        }
+    },
+    "20393": {
+        "name": "Fall Guys",
+        "description": "Fall Guys is a free, cross-platform, massively multiplayer, party royale game where you and your fellow contestants compete through escalating rounds of absurd obstacle course chaos until one lucky victor remains!",
+        "small_description": "Fall Guys is a free, cross-platform, massively multiplayer, party royale game.",
+        "category": "Online, multiplayer",
+        "gamers" : 8793,
+        "imgs": {
+            "large_banners": ["/assets/images/fg.jpg", "/assets/images/fg2.png", "/assets/images/fg3.jpg", "/assets/images/fg4.jpg"],
+            "small_banner": "/assets/images/fg5.jpg"
+        },
+        "commlink": "https://discord.com/invite/fallguys",
+        "downlink": "https://www.fallguys.com/en-US/download",
+        "review": {
+            "gameplaye": 5.2,
+            "sounds": 6.7,
+            "community": 8.3
+        }
+    }
+}
