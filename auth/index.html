@@ -12,7 +12,7 @@
 <body>
     
     <div class="box-holder vcenter">
-        <div class="box w-80 hcenter vcenter wt p-0">
+        <div class="box w-80 hcenter vcenter bg-wt p-0">
             <div class="img-35 float-l">
                 <img src="/assets/images/rise.jpg" class="img-wfull" alt="authImage">
             </div>
@@ -97,6 +97,7 @@
     }
 
 
+    // Taps System
     let tapheads = document.querySelectorAll('[taphead]');
     tapheads.forEach((tapbox)=>{
         tapbox.addEventListener('click', ()=>{
@@ -110,14 +111,11 @@
     })
 
 
-
-
-
+    // Login System
     let loginBtn = document.querySelector('[role="login"]');
     let logingwarning = document.querySelector('#logingwarning');
     let login_username = document.querySelector('#login_username');
     let login_password = document.querySelector('#login_password');
-
     loginBtn.addEventListener('click', async (e)=>{
         e.preventDefault();
 
@@ -144,6 +142,7 @@
     })
 
 
+    // Register System
     let joinBtn = document.querySelector('[role="join"]');
     let joingwarning = document.querySelector('#joingwarning');
     let join_email = document.querySelector('#join_email');

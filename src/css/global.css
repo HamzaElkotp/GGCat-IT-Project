@@ -12,6 +12,23 @@ button{
 }
 
 
+/* Background Colors */
+.bg-wt{
+    background-color: var(--secondary10);
+}
+.bg-wt-20{
+    background-color: var(--secondary20);
+}
+.bg-wt-30{
+    background-color: var(--secondary30);
+}
+.bg-prim10{
+    background-color: var(--primary10);
+}
+.bg-prim20{
+    background-color: var(--primary20);
+}
+
 
 /* buttons sizes*/
 .btn-sm {
@@ -201,60 +218,6 @@ button{
 }
 .txt-secondary-40{
     color: var(--secondary40);
-}
-
-
-/* Paddings */
-.p-0{
-    padding: 0;
-}
-.p-10{
-    padding: 10px;
-}
-.p-20{
-    padding: 20px;
-}
-.p-30{
-    padding: 30px;
-}
-
-.pl-0{
-    padding-left: 0;
-}
-.pl-10{
-    padding-left: 10px;
-}
-.pl-20{
-    padding-left: 20px;
-}
-.pl-30{
-    padding-left: 30px;
-}
-
-.pb-0{
-    padding-bottom: 0;
-}
-.pb-10{
-    padding-bottom: 10px;
-}
-.pb-20{
-    padding-bottom: 20px;
-}
-.pb-30{
-    padding-bottom: 30px;
-}
-
-.pt-0{
-    padding-top: 0;
-}
-.pt-10{
-    padding-top: 10px;
-}
-.pt-20{
-    padding-top: 20px;
-}
-.pt-30{
-    padding-top: 30px;
 }
 
 
