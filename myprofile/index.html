@@ -3,19 +3,116 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>MY PROFILE</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <header id="header"></header>
-
-    <!-- your code is here -->
-
+    <div class="box-holder">
+        <section class="s1">
+                <h1 class="about">Edit Profile</h1><br>
+                <div class="card-body">
+                    <form>
+                        <label for="fname">First name: </label>
+                        <input type="text" value=""> <br><br>
+                        <label for="tname">Last name: </label>  
+                        <input type="text" value=""><br><br>
+                        <label for="rname">Phone Number: </label>
+                        <input type="text" value=""><br><br>
+                        <label for="fname">Email: </label>
+                        <input type="text" value=""> <br><br>
+                        <label for="tname">Password: </label>  
+                        <input type="text" value=""><br><br>
+                    </form>
+                    <form class="edit">
+                        <input type="submit" value="Update">
+                    </form>
+                </div>
+        </section>
+        <section class="ranks">
+            <h1 class="rank">Ranks</h1>
+            <table class="rank3">
+                <tr>
+                    <th><sub>Contest</sub>\Games</th>
+                    <th>Fortnite</th>
+                    <th>Rocket League</th>
+                    <th>Fall Guys</th>
+                </tr>
+                <tr>
+                    <td> name</td>
+                    <td> Fortnite frenzy challenge</td>
+                    <td> rocket rumble tournament</td>
+                    <td> fall guys showdown</td>
+                </tr>
+                <tr>
+                    <td> date</td>
+                    <td> 6/7/2023</td>
+                    <td> 5/8/2023</td>
+                    <td> 10/9/2023</td>
+                </tr>
+                <tr>
+                    <td> points</td>
+                    <td> 800 out of 999</td>
+                    <td> 20 out of 20</td>
+                    <td> 12 out of 15</td>
+                </tr>
+                <tr>
+                    <td> postions</td>
+                    <td> 5<sup>th</sup> place</td>
+                    <td> 1<sup>st</sup> place</td>
+                    <td> 4<sup>th</sup> place</td>
+                </tr>
+                <tr>
+                    <td>levels</td>
+                    <td>bronze</td>
+                    <td>gold</td>
+                    <td>silver</td>
+                </tr>
+            </table>
+        </section>
+        <section class="trophies">
+            <h1 class="trophy">Trophies</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\GGCat-IT-Project\assets\images\ftnite.jpg" alt="" width="300px">
+                        <div class="info">
+                            <div class="icon1">
+                                <i class="fa-light fa-medal"></i>
+                            </div>
+                            <strong>
+                                <p class="levels">5<sup>th</sup> Place</p>
+                            </strong>
+                        </div>
+                </div>     
+                <div class="card">
+                    <img src="C:\GGCat-IT-Project\assets\images\rocketleague2.jpg" alt="" width="300px">
+                        <div class="info">
+                            <div class="icon2">
+                                <i class="fa-light fa-medal"></i>
+                            </div>
+                            <strong>
+                                <p class="levels">1<sup>st</sup> Place</p>
+                            </strong>
+                        </div>
+                </div>  
+                <div class="card">
+                    <img src="C:\GGCat-IT-Project\assets\images\fg3.jpg" alt="" width="300px">
+                        <div class="info">
+                            <div class="icon3">
+                                <i class="fa-light fa-medal"></i>
+                            </div>
+                            <strong>
+                                <p class="levels">4<sup>th</sup> Place</p>
+                            </strong>
+                        </div>
+                </div>        
+            </div>
+        </section>
+    </div>
     <footer id="header"></footer>
-
 </body>
 </html>
 <script src='/src/scripts/main.js'></script>
