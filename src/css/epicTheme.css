@@ -60,6 +60,9 @@
 
 
 /* Box Sizing */
+.box.w-90{
+    width: 85%;
+}
 .box.w-80{
     width: 80%;
 }
