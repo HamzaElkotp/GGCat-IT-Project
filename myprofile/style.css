@@ -7,51 +7,53 @@
     scroll-behavior: smooth;
     text-transform: capitalize;
 }
+:root{
+    --primary10: #7c13ff;
+    --bg80: #1b1927;
+    --primary20: #391660;
+    --secondary30: #d1d1d1;
+    --secondary20: #eeeeee;
+}
 .box-holder{
-    width: 100%;
-    height: 500%;
-    background-color: #1b1927;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color:var(--bg80);
 }
 section.s1{
-    border-radius: 15px;
-    background-color: #391660;
-    margin-left: 40%;
-    padding: 2%;
-    padding-left: 15%;
-    width : 55%;
+    width : 100%;
     height: 100%;
 }
 h1.about{
-    color: blueviolet;
+    color: var(--primary10);
     text-decoration: none;
     display: flex;
     justify-content: center;
     font-size: 2.2em;
     font-weight: 800;
-    padding-right: 30%;
+}
+.text{
+    width: 150%;
+}
+.update{
+    width: 100%;
+    margin-left: 150%;
+    cursor: pointer;
+}
+.update:hover{
+    background-color:var(--primary20);
 }
 .card-body{
     display: flex;
-    color:#7c13ff;
+    color: var(--secondary30);
     width: 30%;
-}
-form.edit{
-    align-content: end;
+    padding-left: 5%;
 }
 section.ranks{
-    border-radius: 15px;
-    background-color: rgb(206,206,206);
     margin-top: 2%;
-    margin-left: 40%;
-    padding: 3%;
-    width : 55%;
+    width : 100%;
 }
 table,th,td{
-    border: 1px solid black;
+    border: 1px solid  var(--primary20);
 }
 table{
     width:100%;
@@ -59,9 +61,10 @@ table{
 td,th{
     width:20%;
     padding: 2%;
+    color:var(--secondary20);
 }
-h1.rank{
-    color:rgb(137, 7, 76);
+h1.rank.txt-primary{
+    color: var(--primary10);
     display: flex;
     justify-content: center;
     font-size: 2.2em;
@@ -69,56 +72,73 @@ h1.rank{
     padding-bottom: 2%;
 }
 .trophies{
-    border-radius: 15px;
-    background-color: #391660;
     margin-top: 2%;
-    margin-left: 40%;
-    padding: 2%;
-    width : 55%;
+    width : 100%;
     height: 100%;
 }
+.p-20{
+    padding: 20px;
+}
 .trophy{
-    color: blueviolet;
+    color: var(--primary10);
     display: flex;
     justify-content: center;
     font-size: 2.2em;
     font-weight: 800;
     padding-bottom: 2%;
 }
-.cards{
+.box-collection.three{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.card{
-    background-color: rgb(206,206,206);
+.child{
+    background-color: #7c13ff;
     box-shadow: 0 5px 15px 0;
     margin: 2%;
     padding: 1.5%;
-    width: 21.25em;
+    width: 10em;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
-.card:hover{
+.child:hover{
     scale: 1.1;
+}
+.box-collection.three .child{
+    width: calc(100%/3);
+}
+.child.bg-wt-30{
+    background-color: var(--secondary20);
 }
 img{
     width:100%;
-    height: 12em;
+    height: 10em;
     border-radius:10px 10px 0 0 ;
 }
 img:hover{
     opacity: 0.9;
 }
 .levels{
-    color: #391660;
+    color: var(--primary20);
+    margin-top: 5%;
+    font-size: 1.5em;
 }
 .icon1{
     color: rgba(134, 24, 24, 0.781);
+    padding-top: 1.5%;
+    font-size: 2em;
 }
 .icon2{
     color: gold;
+    padding-top: 1.5%;
+    font-size: 2em;
 }
 .icon3{
     color: silver;
+    padding-top: 1.5%;
+    font-size: 2em;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
 }

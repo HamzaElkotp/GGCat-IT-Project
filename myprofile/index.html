@@ -7,33 +7,33 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header"></header>
     <div class="box-holder">
-        <section class="s1">
+        <section class="s1 p-20">
                 <h1 class="about">Edit Profile</h1><br>
                 <div class="card-body">
                     <form>
                         <label for="fname">First name: </label>
-                        <input type="text" value=""> <br><br>
+                        <input type="text" class="text" value=""> <br><br>
                         <label for="tname">Last name: </label>  
-                        <input type="text" value=""><br><br>
+                        <input type="text" class="text" value=""><br><br>
                         <label for="rname">Phone Number: </label>
-                        <input type="text" value=""><br><br>
+                        <input type="text" class="text" value=""><br><br>
                         <label for="fname">Email: </label>
-                        <input type="text" value=""> <br><br>
+                        <input type="text" class="text" value=""> <br><br>
                         <label for="tname">Password: </label>  
-                        <input type="text" value=""><br><br>
-                    </form>
-                    <form class="edit">
-                        <input type="submit" value="Update">
+                        <input type="text" class="text" value=""><br><br>
+                        <input type="submit" class="update" value="update">
                     </form>
                 </div>
         </section>
-        <section class="ranks">
-            <h1 class="rank">Ranks</h1>
+        <section class="ranks p-20">
+            <h1 class="rank txt-primary">Ranks</h1>
             <table class="rank3">
                 <tr>
                     <th><sub>Contest</sub>\Games</th>
@@ -73,40 +73,41 @@
                 </tr>
             </table>
         </section>
-        <section class="trophies">
+        <section class="trophies p-20">
             <h1 class="trophy">Trophies</h1>
-            <div class="cards">
-                <div class="card">
+            <div class="box-collection three ">
+                <div class="child bg-wt-30">
                     <img src="C:\GGCat-IT-Project\assets\images\ftnite.jpg" alt="" width="300px">
                         <div class="info">
-                            <div class="icon1">
-                                <i class="fa-light fa-medal"></i>
-                            </div>
                             <strong>
                                 <p class="levels">5<sup>th</sup> Place</p>
                             </strong>
+                            <div class="icon1">
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
                         </div>
                 </div>     
-                <div class="card">
+                <div class="child bg-wt-30">
                     <img src="C:\GGCat-IT-Project\assets\images\rocketleague2.jpg" alt="" width="300px">
                         <div class="info">
-                            <div class="icon2">
-                                <i class="fa-light fa-medal"></i>
-                            </div>
                             <strong>
                                 <p class="levels">1<sup>st</sup> Place</p>
                             </strong>
+                            <div class="icon2">
+                                <i class="fa-solid fa-medal"></i>
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
                         </div>
                 </div>  
-                <div class="card">
+                <div class="child bg-wt-30">
                     <img src="C:\GGCat-IT-Project\assets\images\fg3.jpg" alt="" width="300px">
                         <div class="info">
-                            <div class="icon3">
-                                <i class="fa-light fa-medal"></i>
-                            </div>
                             <strong>
                                 <p class="levels">4<sup>th</sup> Place</p>
                             </strong>
+                            <div class="icon3">
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
                         </div>
                 </div>        
             </div>
