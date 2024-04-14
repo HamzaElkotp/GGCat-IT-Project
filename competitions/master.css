@@ -1,0 +1,75 @@
+img.one {
+    position: absolute;
+    margin-left: 65%;
+    background-size: contain;
+    /* height: 35%; */
+    border: solid 2px black;
+    height: 100%;
+    margin-top: -2px;
+}
+div.parent{
+    /* display: inline-block ; */
+    height: 200px;
+    position: relative;
+    border: solid 6px black;
+    width: (calc(100%-200px));
+    background-color: #eee;
+    /* justify-content: space-between; */
+}
+
+div.child_one{
+    justify-content:space-evenly;
+    margin-top: -20px;
+    height: 100%;
+}
+
+p{
+    margin: 20px 0;
+}
+
+h1{
+    margin: 20px 0px;
+}
+
+button{
+    margin: 20px 0px;
+}
+
+img.two {
+    position: absolute;
+    background-size: contain;
+    height: 50% !important;
+    border: solid 2px black;
+    width: 100%;
+    margin-top: 1px;
+    margin-left: 0%;
+}
+
+div.child{
+    display: inline-block ;
+    border: solid 6px black;
+    width:48%;
+    justify-content:space-evenly;
+    position: relative;
+}
+
+img.three{
+    position:absolute;
+    background-size: contain;
+    height: 50% !important;
+    border: solid 2px black;
+    width: 100%;
+    margin-top: 1px;
+    margin-left: 0%;
+}
+
+.text{
+    height: 50%;
+    margin-top:210px  ;
+
+}
+
+.prize{
+    margin-left: 50%;
+    color:red;
+}
