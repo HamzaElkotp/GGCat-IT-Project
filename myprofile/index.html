@@ -17,17 +17,20 @@
         <section class="s1 p-20">
                 <h1 class="about">Edit Profile</h1><br>
                 <div class="card-body">
-                    <form>
+                    <img class="imag1" src="C:\GGCat-IT-Project\assets\images\26034.edit.jpg" alt="gamephoto">
+                    <form class="form1 light">
                         <label for="fname">First name: </label>
-                        <input type="text" class="text" value=""> <br><br>
-                        <label for="tname">Last name: </label>  
-                        <input type="text" class="text" value=""><br><br>
-                        <label for="rname">Phone Number: </label>
-                        <input type="text" class="text" value=""><br><br>
-                        <label for="fname">Email: </label>
-                        <input type="text" class="text" value=""> <br><br>
-                        <label for="tname">Password: </label>  
-                        <input type="text" class="text" value=""><br><br>
+                        <input type="text" id="fname" class="text" placeholder="enter your first name" value=""  required ><br><br>
+                        <label for="lname">Last name: </label>  
+                        <input type="text" id="lname" class="text" placeholder="enter your last name" value="" required><br><br>
+                        <label for="uname">Username: </label>
+                        <input type="text" id="uname" class="text" placeholder="enter your username" value="" required><br><br>
+                        <label for="phname">Phone Number: </label>
+                        <input type="number" id="phname" class="text" placeholder="enter your phone number (optional) " value=""><br><br>
+                        <label for="ename">Email: </label>
+                        <input type="email" id="ename" class="text" placeholder="enter your email" value="" required><br><br>
+                        <label for="pname">Password: </label>  
+                        <input type="text" id="pname" placeholder="enter your password" class="text" value="" required></form><br>
                         <input type="submit" class="update" value="update">
                     </form>
                 </div>
