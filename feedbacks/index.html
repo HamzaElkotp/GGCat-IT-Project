@@ -9,13 +9,98 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
 </head>
 <body>
+    <form action="  " target="_blank">
+    <header class="img-55" >
+      
+       &#128104;Name:
+<input title="Name" name="Name" placeholder="Enter Name" type="text" required >
+  
+
+        &#128231;Email Address:
+<input title="Email"name="Email"  placeholder="Enter Email @" type="email" required >
+
+
+       &#128222;Phone No:
+<input title="Name" name="Phone" placeholder="Enter NO" type="tel">
+
+    </header>
+    <div >
+        &#127918;Choose your Games
+        <select name="game">
+<optgroup label="Game1">
+    <option value="FALL GUYS">FALL GUYS</option>
+    <option value="FORTNITE">FORTNITE</option>
+    <option value="ROCKET LEAGUE">ROCKET LEAGUE</option>
+</optgroup>
+<optgroup label="Game2">
+    <option value="THE BIG BANG">THE BIG BANG</option>
+    <option value="CYBER MoNDay">CYBER MoNDay</option>
+</optgroup>
+</select>
+    </div>
     
-    <header id="header"></header>
+    <p>&#128512;Do you satisfy with our service?</p>
 
-    <!-- your code is here -->
+  <footer class="footer btnlink"> 
 
-    <footer id="footer"></footer>
+        
+Yes<input   type="radio" name="shipping" id="rad1" value="standard">
+     
+        
+No<input  type="radio" name="shipping" id="rad2" value="standard">
 
+ 
+Rate:<input class="Range" name="range" type="range" min="0" max="10" >
+     </footer> 
+   
+<p>&#128221;Write your Suggestion:</p>
+
+<textarea class="img-75 " placeholder="Comment" title="Comment"></textarea>
+<button class="btnlink btn-thm-1 btn-se-md outline img-75 ">Sumbit</button>
+
+<style>  
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }   
+    
+     header{
+        color:#7c13ff ;
+        margin-top: 30px;
+     margin-left: 250px; 
+    }
+    .Range{
+        width: 200px;
+    }
+    p{
+        color:#391660 ;
+        margin-top: 10px;
+         margin-left: 250px; 
+    }
+    div{
+        margin-left:420px;
+        color: #391660;
+    }
+   footer{
+    color: #d1d1d1;
+    width: 5%;
+
+   margin-left:250px;
+   margin-top:15px ;
+   }
+   
+ textarea{
+    margin-left: 200px;
+    height: 300px; 
+    display: block;
+ }
+ button{
+    margin-left: 200px;
+    border-radius: 5px;
+}   
+
+</style>
+</form>
 </body>
 </html>
 <script src='/src/scripts/main.js'></script>

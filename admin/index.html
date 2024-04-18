@@ -8,14 +8,57 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
 </head>
-<body>
-    
-    <header id="header"></header>
+<body>   
+               
+              <table>
+                <caption colpan="4" class="caption">
+                    Players
+                </caption>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Score</th>
+                </tr>
+              </table>
 
-    <!-- your code is here -->
+        <div class="book img-45">
 
-    <footer id="footer"></footer>
+            <label>ID:</label>
+            <input type="text" name="id" title="please enter" placeholder="enter ID">
 
+            <label>Name:</label>
+            <input type="text" name="name" title="please enter" placeholder="enter Name">
+
+            <label> Rank:</label>
+           <input type="text" name="rank" title="please enter" placeholder="enter Rank">
+
+            <label>Score:</label>
+            <input type="text" name="score"  title="please enter" placeholder="enter Score">
+        </div>
+            <button class="btn-thm-1 outline" name="this" type="submit">Add</button>
+            <button class="btn-thm-2 outline" name="you" type="reset">Edit</button>
+            <button class="btn-thm-2 outline" name="satisfy"type="submit">Remove</button>
+       
+<style>
+.book{
+    margin-left: 350px;
+    margin-top: 50px;
+}
+.btn-thm-2.outline{
+    margin-left: 150px;
+    margin-top: 25px;
+}
+.btn-thm-1.outline{
+    margin-left: 380px;  
+}
+table{
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+
+</style>
 </body>
 </html>
 <script src='/src/scripts/main.js'></script>
