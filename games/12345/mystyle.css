@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+}
+*:not(i) {
+    font-family: "Reddit Mono", monospace;
+}
+:root{
+    --bg100: #181823;
+    --primary10: #7c13ff;
+    --primary20: #391660;
+    --secondary30: #d1d1d1;
+    --secondary40: #b0b0b0;
+}
+.box-holder{
+    padding: 30px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg100);
+    margin: 0;
+}
+.box.w-90{
+    width: 85%;
+}
+.box.p-0{
+    padding: 0;
+}
+.box.hcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fort1{
+    height: 80vh;
+    display: flex;
+    justify-content:space-between;
+    background-image: url(image/photo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    font-weight: 700;
+    padding-top: 20%;
+    padding-left: 3%;
+}
+.fortnite{
+    font-size: 3rem;
+    padding-bottom: 8%;
+    color: var(--secondary40);
+    text-shadow: 5px 5px var(--primary20);
+}
+.p1{
+    font-size: 1.15rem;
+    width: 85%;
+    color: var(--secondary40);
+    text-shadow: 2px 2px var(--primary20);
+}
+.gang{
+    margin-top: 17.8%;
+}
+.fort2{
+    padding-top: 10%;
+}
+.group1{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+.image1{
+    width:35%;
+    transition: 0.5s;
+}
+.image1:hover{
+    opacity: 0.8;
+    transform:scale(1.1);
+}
+.p2{
+    width: 55%;
+    font-size: 1.35rem;
+    padding-top: 4%;
+    color: var(--secondary40);
+    text-shadow: 2px 2px var(--primary20);
+}
+.p3{
+    width: 55%;
+    font-size: 1.35rem;
+    padding-top: 10%;
+    color: var(--secondary40);
+    text-shadow: 2px 2px var(--primary20);
+}
+::selection{
+    background-color: var(--secondary30);
+    color:var(--primary20);
+    text-shadow: 2px 2px var(--secondary30);
+}
+.fort3{
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+table, th , td{
+    border: 1px solid  var(--primary10);
+    width: 48%;
+}
+td,th{
+    padding:3%;
+    color:var(--secondary30);
+}
+.fort4{
+    padding-top: 10%;
+}
+.lets{
+    color: var(--primary10);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 5%;
+}
+.play{
+    display: flex;
+    justify-content:space-evenly;
+}
+.comm-down{
+    text-decoration: none;
+    color: var(--secondary30);
+}
+.fa-brands.fa-discord{
+    color: var(--secondary30);
+    padding-top: 3%;
+    align-self: center;
+}
+.fa-solid.fa-download{
+    color: var(--secondary30);
+    padding-top: 3%;
+    align-self: center;
+}
+.link{
+    background-color: var(--primary10);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 0.6em 1em;
+    transition: all 1s 0s;
+}
+.link:hover{
+    background-color:#5e0bc4;
+    transform: scale(1.1);
+}
+.link:visited{
+    color: var(--primary20);
+}
