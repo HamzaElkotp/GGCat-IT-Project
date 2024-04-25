@@ -21,8 +21,8 @@ h2,h1,h3{
 }
 .img{
     width: 100%;
-    background-size:cover  
-    margin-bottom: 50px;
+    background-size:cover;  
+    margin-bottom:50px;
 }
 .left{
     margin-right: 15px;
@@ -33,4 +33,27 @@ h2,h1,h3{
 .Up{
     display: flex;
     justify-content: center;
+}
+
+div.ranks{
+    width : 100%;
+    margin-bottom: 10%;
+}
+table,th,td{
+    border: 1px solid  var(--primary20);
+}
+table{
+    width:100%;
+}
+td,th{
+    width:20%;
+    padding: 2%;
+    color:var(--secondary20);
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+li,td,th{
+    font-size: 25px;
 }
