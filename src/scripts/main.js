@@ -37,4 +37,37 @@ const secureApp = composer(checkLoging, redirectToLoggin);
             secureApp();
         }
     })
-}())
+}());
+
+
+
+
+function themeActivator(){
+
+}
+
+function navBarActivator(){
+    // document.getElementById('sdsds').addEventListener('click', ()=>{
+    //     console.log(1)
+    // })
+}
+
+(function navBarLoader(){
+    let nav = document.querySelector('#header');
+    navBarActivator();
+    nav?.innerHTML += 
+    `
+        
+
+    `;
+
+}());
+
+(function footerLoader(){
+    let footer = document.querySelector('#footer');
+    footer?.innerHTML += 
+    `
+        
+
+    `;
+}());

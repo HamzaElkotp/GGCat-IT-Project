@@ -60,6 +60,9 @@
 
 
 /* Box Sizing */
+.box.w-90{
+    width: 85%;
+}
 .box.w-80{
     width: 80%;
 }
@@ -203,6 +206,19 @@
     padding-left: 30px;
 }
 
+.pr-0{
+    padding-right: 0;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pr-30{
+    padding-right: 30px;
+}
+
 .pb-0{
     padding-bottom: 0;
 }
@@ -227,4 +243,48 @@
 }
 .pt-30{
     padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
+    background-color: var(--primary10);
+    color: var(--secondary10);
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th{
+    padding: 15px 20px;
+}
+.content-table td {
+    padding: 8px 20px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid var(--secondary30);
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: var(--secondary20);
+    font-weight: bold;
+    color: var(--primary10);
+}
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: var(--secondary10);
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary10);
 }
