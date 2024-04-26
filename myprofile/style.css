@@ -50,15 +50,15 @@ h1.Profile{
     display: flex;
 }
 .form-wrapper{
-    position: relative;
+    /* position: relative; */
     color: var(--primary10);
     margin-left: 5%;
 }
 input:not(label input){
     font-size: 16px;
     padding: 10px;
-    margin-bottom: 15px;
-    background-color: var(--secondary20);
+    /* margin-bottom: 15px; */
+    /* background-color: var(--secondary20); */
     border: 2px solid var(--primary40);
 }
 input:focus{
@@ -66,20 +66,20 @@ input:focus{
     outline: transparent;
 }
 .imag1{
-    width: 45%;
+    /* width: 60%; */
     height: auto;
 }
 .text{
     width: 180%;
 }
 .update{
-    position:absolute;
-    left: 135%;
-    padding: 5%;
-    width: 45%;
+    /* position:absolute; */
+    /* left: 135%; */
+    /* padding: 5%; */
+    /* width: 45%; */
     cursor: pointer;
-    border: 2px solid var(--primary10);
-    color: var(--primary10);
+    /* border: 2px solid var(--primary10); */
+    /* color: var(--primary10); */
     transition: 0.3s;
 }
 .update:hover{

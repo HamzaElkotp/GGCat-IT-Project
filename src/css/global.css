@@ -137,6 +137,7 @@ button{
 /* button as Links */
 .btnlink{
     display: block;
+    text-decoration: none;
 }
 
 

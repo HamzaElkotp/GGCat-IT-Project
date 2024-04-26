@@ -38,7 +38,7 @@ body{
     height: 80vh;
     display: flex;
     justify-content:space-between;
-    background-image: url(image/photo1.jpg);
+    background-image: url(/assets/images/photo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,6 +60,7 @@ body{
     width: 85%;
     color: var(--secondary40);
     text-shadow: 2px 2px var(--primary20);
+    line-height: 35px;
 }
 .gang{
     margin-top: 17.8%;
@@ -86,6 +87,7 @@ body{
     padding-top: 4%;
     color: var(--secondary40);
     text-shadow: 2px 2px var(--primary20);
+    line-height: 40px;
 }
 .p3{
     width: 55%;
@@ -93,6 +95,7 @@ body{
     padding-top: 10%;
     color: var(--secondary40);
     text-shadow: 2px 2px var(--primary20);
+    line-height: 50px;
 }
 ::selection{
     background-color: var(--secondary30);
@@ -125,7 +128,7 @@ td,th{
 }
 .play{
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 .comm-down{
     text-decoration: none;
@@ -133,29 +136,24 @@ td,th{
 }
 .fa-brands.fa-discord{
     color: var(--secondary30);
-    padding-top: 3%;
+    padding-right: 5%;
     align-self: center;
 }
 .fa-solid.fa-download{
     color: var(--secondary30);
-    padding-top: 3%;
+    padding-right: 5%;
     align-self: center;
 }
 .link{
     background-color: var(--primary10);
     display: flex;
-    flex-direction: column;
-    border-radius: 15px;
+    /* flex-direction: column; */
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 30px;
-    padding: 0.6em 1em;
+    padding: .6em 1.6em;
     transition: all 1s 0s;
 }
 .link:hover{
-    background-color:#5e0bc4;
     transform: scale(1.1);
-}
-.link:visited{
-    color: var(--primary20);
 }
