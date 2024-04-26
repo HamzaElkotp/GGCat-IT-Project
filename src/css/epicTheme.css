@@ -21,190 +21,270 @@
     font-family: "Reddit Mono", monospace;
 }
 
-body{
-    background-color: var(--bg100);
+
+.title{
+    text-align: center;
 }
 
 
 
+/* Container */
+.box-holder{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.box-holder.vcenter{
+    height: 100vh;
+    position: relative;
+}
 
-/* buttons sizes*/
-.btn-sm {
-    font-size: 12px;
-    padding: 5px 10px;
+
+/* Box & positions */
+.box{
+    height: 100%;
 }
-.btn-se-md {
-    font-size: 14px;
-    padding: 7px 12px;
+.box.hcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.btn-md {
-    font-size: 16px;
-    padding: 8px 14px;
+.box.vcenter{
+    display: block;
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.btn-lg {
-    font-size: 18px;
-    padding: 10px 16px;
+
+
+/* Box Sizing */
+.box.w-90{
+    width: 85%;
 }
-.btn-fs {
+.box.w-80{
+    width: 80%;
+}
+.box.w-75{
+    width: 75%;
+}
+.box.w-65{
+    width: 65%;
+}
+.box.w-50{
+    width: 50%;
+}
+.box.w-33{
+    width: 33.33%;
+}
+.box.w-25{
+    width: 25%;
+}
+
+
+/* image Sizing */
+.img-box.fit{
+    height: fit-content;
+}
+.img-wfull{
     width: 100%;
 }
+.img-hfull{
+    height: 100%;
+}
+.img-75{
+    width: 75%;
+}
+.img-65{
+    width: 65%;
+}
+.img-55{
+    width: 55%;
+}
+.img-50{
+    width: 50%;
+}
+.img-45{
+    width: 45%;
+}
+.img-35{
+    width: 35%;
+}
+.img-25{
+    width: 25%;
+}
 
 
-/* buttons Colors*/
-.btn-thm-1{
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .box.w-80, .box.w-75, .box.w-60, .box.w-50{
+        width: 80%;
+    }
+    .box.w-33, .box.w-25{
+        width: 60%;
+    }
+}
+@media (max-width: 500px) {
+    .box.w-80, .box.w-75, .box.w-60, .box.w-50{
+        width: 90%;
+    }
+    .box.w-33, .box.w-25{
+        width: 100%;
+    }
+    .box-holder{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+
+
+
+
+
+
+
+
+/* Near boxes */
+.box-collection .child{
+    float: left;
+}
+.box-collection.three .child{
+    width: calc(100%/3);
+}
+.box-collection.two .child{
+    width: 50%;
+}
+.box-collection.four .child{
+    width: 25%;
+}
+
+
+/* Paddings */
+.p-0{
+    padding: 0;
+}
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+
+.pl-0{
+    padding-left: 0;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pl-30{
+    padding-left: 30px;
+}
+
+.pr-0{
+    padding-right: 0;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pr-30{
+    padding-right: 30px;
+}
+
+.pb-0{
+    padding-bottom: 0;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+
+.pt-0{
+    padding-top: 0;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pt-30{
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
     background-color: var(--primary10);
-    border: 2px solid var(--primary10);
-    color: var(--secondary20);
-}
-.btn-thm-2{
-    background-color: var(--primary20);
-    border: 2px solid var(--primary20);
-    color: var(--secondary20);
-}
-.btn-thm-3{
-    background-color: var(--primary30);
-    border: 2px solid var(--primary30);
-    color: var(--secondary20);
-}
-.btn-thm-4{
-    background-color: var(--primary40);
-    border: 2px solid var(--primary40);
-    color: var(--secondary20);
-}
-.btn-del{
-    background-color: #ff094e;
-    border: 2px solid #ff094e;
-}
-.btn-warn{
-    background-color: #fae500;
-    border: 2px solid #fae500;
-}
-.btn-success{
-    background-color: #00fa53;
-    border: 2px solid #00fa53;
-}
-.btn-thm-1.outline{
-    background-color: transparent;
-    border: 2px solid var(--primary10);
-    color: var(--primary10);
-    transition: 0.3s;
-}
-.btn-thm-1.outline:hover{
-    background-color: var(--primary10);
     color: var(--secondary10);
+    text-align: left;
+    font-weight: bold;
 }
-.btn-thm-2.outline{
-    background-color: transparent;
-    border: 2px solid var(--primary20);
-    color: var(--primary20);
-    transition: 0.3s;
+.content-table th{
+    padding: 15px 20px;
 }
-.btn-thm-2.outline:hover{
-    background-color: var(--primary20);
-    color: var(--secondary20);
+.content-table td {
+    padding: 8px 20px;
 }
-
-
-/* Links colors */
-.link-primary{
-    color: var(--primary10);
-    font-weight: 500;
-    /* text-decoration: none; */
+.content-table tbody tr {
+    border-bottom: 1px solid var(--secondary30);
 }
-.link-primary-dk{
-    color: var(--primary20);
-    font-weight: 500;
-    /* text-decoration: none; */
-}
-.link-secondary{
-    color: var(--secondary10);
-    font-weight: 500;
-    /* text-decoration: none; */
-}
-.link-primary:hover, .link-primary-dk:hover, .link-secondary:hover{
-    text-decoration: underline;
-}
-
-
-/* button as Links */
-.btnlink{
-    display: block;
-}
-
-
-/* Font Weight */
-.fw-100{
-    font-weight: 100;
-}
-.fw-200{
-    font-weight: 200;
-}
-.fw-300{
-    font-weight: 300;
-}
-.fw-400{
-    font-weight: 400;
-}
-.fw-500{
-    font-weight: 500;
-}
-.fw-600{
-    font-weight: 600;
-}
-.fw-700{
-    font-weight: 700;
-}
-
-
-/* Font size */
-.ft-1{
-    font-size: 1rem;
-}
-.ft-115{
-    font-size: 1.15rem;
-}
-.ft-125{
-    font-size: 1.25rem;
-}
-.ft-135{
-    font-size: 1.35rem;
-}
-.ft-145{
-    font-size: 1.45rem;
-}
-.ft-15{
-    font-size: 1.5rem;
-}
-.ft-175{
-    font-size: 1.75rem;
-}
-.ft-185{
-    font-size: 1.85rem;
-}
-.ft-2{
-    font-size: 2rem;
-}
-
-
-/* Text colors */
-.txt-primary{
+.content-table tbody tr:nth-of-type(even) {
+    background-color: var(--secondary20);
+    font-weight: bold;
     color: var(--primary10);
 }
-.txt-primary-dk{
-    color: var(--primary20);
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: var(--secondary10);
 }
-.txt-primary-bl{
-    color: var(--primary40);
-}
-.txt-secondary{
-    color: var(--secondary10);
-}
-.txt-secondary-20{
-    color: var(--secondary20);
-}
-.txt-secondary-30{
-    color: var(--secondary30);
-}
-.txt-secondary-40{
-    color: var(--secondary40);
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary10);
 }
