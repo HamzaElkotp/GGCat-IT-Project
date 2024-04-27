@@ -1,0 +1,96 @@
+[
+    {
+        "id": "2005",
+        "name": "Fortnite Championship",
+        "date": "2024-04-30",
+        "description": "A competitive Fortnite gaming contest where top players battle for the championship title. The contest consists of multiple rounds leading to the grand finals.",
+        "images": ["/assets/images/ftnite.webp", "/assets/images/ftnite2.jpg"],
+        "agenda": [
+            {
+                "name": "Contest Kick-Off",
+                "start": "2024-04-30 - :00:00",
+                "end": "2024-04-30 - :30:00",
+                "status": "Completed"
+            },
+            {
+                "name": "Round 1 Start",
+                "start": "2024-04-30 - :00:00",
+                "end": "2024-04-30T12:00:00",
+                "status": "Completed"
+            },
+            {
+                "name": "Round 2 Start",
+                "start": "2024-04-30 - :00:00",
+                "end": "2024-04-30T14:00:00",
+                "status": "Completed"
+            },
+            {
+                "name": "Semi-Finals",
+                "start": "2024-04-30 - :00:00",
+                "end": "2024-04-30 - :00:00",
+                "status": "Ongoing"
+            },
+            {
+                "name": "Finals",
+                "start": "2024-04-30 - :00:00",
+                "end": "2024-04-30T18:00:00",
+                "status": "Scheduled"
+            }
+        ],
+        "prizes": {
+            "1": "$8,000",
+            "2": "$5,000",
+            "3": "$3,000"
+        }
+    },
+    {
+        "id": "2016",
+        "name": "Rocket League Championship",
+        "date": "2024-05-01",
+        "description": "A thrilling Rocket League gaming contest where top teams compete for the championship title. The contest consists of multiple rounds leading to the grand finals.",
+        "images": ["/assets/images/rocketleague5.jpg", "/assets/images/rocketleague.jpg"],
+        "agenda": [
+            {
+                "name": "Contest Kick-Off",
+                "start": "2024-05-01 - :00:00",
+                "end": "2024-05-01 - :30:00",
+                "status": "Completed"
+            },
+            {
+                "name": "Round 1 Start",
+                "start": "2024-05-01 - :00:00",
+                "end": "2024-05-01T12:00:00",
+                "status": "Completed"
+            },
+            {
+                "name": "Round 2 Start",
+                "start": "2024-05-01 - :00:00",
+                "end": "2024-05-01T14:00:00",
+                "status": "Ongoing"
+            },
+            {
+                "name": "Round 3 Start",
+                "start": "2024-05-01 - :00:00",
+                "end": "2024-05-01T14:00:00",
+                "status": "Scheduled"
+            },
+            {
+                "name": "Semi-Finals",
+                "start": "2024-05-01 - :00:00",
+                "end": "2024-05-01 - :00:00",
+                "status": "Scheduled"
+            },
+            {
+                "name": "Finals",
+                "start": "2024-05-01 - :00:00",
+                "end": "2024-05-01T18:00:00",
+                "status": "Scheduled"
+            }
+        ],
+        "prizes": {
+            "1": "$10,000",
+            "2": "$5,000",
+            "3": "$2,000"
+        }
+    }
+]
