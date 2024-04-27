@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,14 +9,228 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
 </head>
+
 <body>
-    
-    <header id="header"></header>
 
-    <!-- your code is here -->
+    <div class="db-menu">
+        <div class="sidebar" id="sidebar">
 
-    <footer id="header"></footer>
+        </div>
+        <div class="db-holder p-30">
+            <!-- Everything should be here -->
+            <div class="outer">
+                <h1 class="momwidth">Competition</h1>
+                <span></span>
+                <span></span>
+            </div>
+        
+        
+            <h2>Description</h2>
+            <ul>
+                <li>those in which players play against one another and where one player winning means another player loses</li>
+        
+            </ul>
+            <table class="content-table" id="table">
+                <thead>
+                    <tr>
+        
+                        <th>Name Of Games</th>
+                        <th>Name of gain</th>
+                        <th>Prize</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Control</th>
+                    </tr>
+        
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> <button class="btn-sm btn-thm-1 fw-500 ft-1" id="btn">Add</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> <button class="btn-sm btn-thm-1 fw-500" id="btn">Edit</button> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="btn-sm btn-del">Submit</button></td>
+        
+                    </tr>
+                </tbody>
+            </table>
+        
+        
+            <hr>
+            <div class="outer">
+                <h1 class="uuss">Users</h1>
+                <span></span>
+                <span></span>
+            </div>
+            <h2>Description</h2>
+            <ul>
+                <li>Welcome to our blog dedicated to game localization best practices, interviews,
+                    video game market insights and other useful tips to make the
+                    localization of your games easier.</li>
+            </ul>
+            <div class="mar img-55 txt-primary">
+                First Name &#128104;:
+                <input id="fname" title="Name" name="Name" type="name" required placeholder="First Name">
+                Last Name &#128104;:
+                <input id="lname" title="Name" name="Name" type="name" required placeholder="Last Name">
+                Email &#128231;:
+                <input id="email" title="Email" name="Email" type="email" required placeholder="Email">
+                ID &#128204;:
+                <input id="ID" title="ID" name="Id" type="text" required placeholder="ID">
+                Rank &#127894; :
+                <input id="Rank" title="Rank" name="Rank" type="text" required placeholder="Rank">
+                Score &#9917;:
+                <input id="Score" title="Name" name="Score" type="test" required placeholder="Score">
+            </div>
+        
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Id</th>
+                        <th>Rank</th>
+                        <th>Score</th>
+                        <th>Control</th>
+                    </tr>
+        
+                </thead>
+                <tbody>
+        
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> <button class="btn-sm btn-thm-1 fw-500 ft-1">Add</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> <button class="btn-sm btn-thm-1 fw-500">Edit</button> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> <button class="btn-sm btn-del" type="submit" id="btn">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 </body>
+
 </html>
-<script src='/src/scripts/main.js'></script>
+<script src='/src/scripts/main.js'>
+</script>
+
+
+<style>
+    .mar {
+        margin-left: 250px;
+    }
+
+    tr,
+    td,
+    th {
+        border: 2px solid #7c13ff;
+        ;
+    }
+
+    .momwidth {
+        margin-left: 25px;
+        margin-top: 95px;
+    }
+
+    .uuss {
+        margin-top: 100px;
+        margin-left: 75px;
+    }
+
+    .outer {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 50%;
+        margin-top: 50px;
+
+    }
+
+    .outer:hover {
+        background: linear-gradient(#14ffe9, #ff00ee);
+        animation: filter .5s linear infinite;
+    }
+
+    @keyframes filter {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    .outer::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background: #240229;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+    }
+
+    .outer h1 {
+        position: absolute;
+        z-index: 9;
+    }
+
+    .outer span {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: linear-gradient(#14ffe9, #ff00e0);
+    }
+
+    .outer span:nth-child(1) {
+        filter: blur(25px);
+    }
+
+    .outer span:nth-child(2) {
+        filter: blur(50px);
+    }
+</style>
