@@ -1,9 +1,9 @@
 body, html {
     margin: 0;
-    background-color: #181823;
+    /* background-color: #181823; */
 }
 
-.head h1{
+/* .head h1{
     margin: 0;
     padding: 0;
     transform:translateY(50%);
@@ -19,18 +19,18 @@ body, html {
     0 0 92px #08009f,
     0 0 102px #08009f,
     0 0 151px #08009f;
-}
+} */
 
 .feed_box{
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    margin-top: 5%;
-    margin-left: 25%;
-    border: 4px solid #ececec;
-    box-shadow: #fff 0px 5px 25px;
+    /* width: 50%; */
+    /* padding: 0; */
+    /* margin: 0; */
+    margin-top: 3%;
+    /* margin-left: 25%; */
+    border: 2px solid #ececec;
+    box-shadow: #fff 0px 5px 10px;
     transition: all 0.5s ease-in-out;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
 }
 
 .info{
@@ -47,9 +47,9 @@ body, html {
 .feed_box .review p{
     color: #ececec;
     font-size: 1.25rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 0;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    /* margin-top: 0; */
 }
 
 .btns{
@@ -63,7 +63,7 @@ body, html {
     font-weight: 750;
 }
 
-.edit{
+/* .edit{
     font-size: 14px;
     padding: 7px 12px;
     width: 100px;
@@ -71,9 +71,9 @@ body, html {
     border: 3px solid #00fa53;
     margin-bottom: 2%;
     cursor: pointer;
-}
+} */
 
-.del{
+/* .del{
     font-size: 14px;
     padding: 7px 12px;
     width: 100px;
@@ -81,7 +81,7 @@ body, html {
     border: 3px solid #ff094e;
     margin-bottom: 2%;
     cursor: pointer;
-}
+} */
 
 .btns .edit:hover{
     background-color:#00fa53;
@@ -95,7 +95,7 @@ body, html {
 
 .feed_box:hover{
     transition: all 0.5s ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 #feed_3{
