@@ -1,12 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-
-body{
-    background-color: var(--bg100);
-    margin: 0;
-}
-
 button{
     cursor: pointer;
 }
@@ -247,10 +238,3 @@ input::placeholder{
     font-size: 13px;
     font-weight: 500;
 }
-
-
-
-
-
-
-
