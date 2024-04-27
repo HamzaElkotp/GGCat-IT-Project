@@ -19,10 +19,7 @@
     padding: 30px;
     box-sizing: border-box;
 }
-body{
-    background-color: var(--bg100);
-    margin: 0;
-}
+
 .box.w-90{
     width: 85%;
 }

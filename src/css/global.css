@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg100);
+    margin: 0;
+}
+
 button{
     cursor: pointer;
 }
@@ -128,7 +137,6 @@ button{
 /* button as Links */
 .btnlink{
     display: block;
-    text-decoration: none;
 }
 
 

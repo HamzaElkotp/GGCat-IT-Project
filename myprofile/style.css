@@ -32,10 +32,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-body{
-    background-color: var(--bg100);
-    margin: 0;
-}
+
 section.edit{
     margin-bottom: 15%;
 }

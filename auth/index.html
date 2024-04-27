@@ -3,19 +3,167 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Authentication</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/all.min.css'>
 </head>
 <body>
     
-    <header id="header"></header>
+    <div class="box-holder vcenter">
+        <div class="box w-80 hcenter vcenter bg-wt p-0">
+            <div class="img-35 float-l">
+                <img src="/assets/images/rise.jpg" class="img-wfull" alt="authImage">
+            </div>
+            <div class="img-65 float-l p-20">
+                <div class="taps-box">
+                    <button class="btn-50 btn-thm-1 btn-md" taphead="1"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+                    <button class="btn-50 btn-thm-1 outline btn-md" taphead="2"><i class="fa-solid fa-door-open"></i> Join</button>
+                </div>
+                <div class="pt-10 taps-box" tap="1">
+                    <h1 class="title pt-20 txt-primary-dk">Welcome Back!</h1>
+                    <form action="" id="loginForm">
+                        <div>
+                            <label for="login_username" class="formlabel">Username</label>
+                            <input type="text" placeholder="Enter Your Username" id="login_username" required>
+                        </div>
+                        <div>
+                            <label for="login_password" class="formlabel">Password</label>
+                            <input type="password" placeholder="Enter Your Password" id="login_password" required>
+                        </div>
+                        <div class="rememberme">
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn-thm-1 btn-md btn-25 fw-600" role="login">Enter</button>
+                        <p class="txt-primary ft-700 ft-85" id="logingwarning"></p>
+                    </form>
+                </div>
 
-    <!-- your code is here -->
-
-    <footer id="header"></footer>
+                <div class="pt-10 taps-box hide" tap="2">
+                    <h1 class="title pt-20 txt-primary-dk">Join Now!</h1>
+                    <form action="" id="loginForm">
+                        <div>
+                            <label for="Email" class="formlabel">Email</label>
+                            <input type="text" placeholder="Enter Your Email" id="join_email" required>
+                        </div>
+                        <div>
+                            <label for="login_username" class="formlabel">Username</label>
+                            <input type="text" placeholder="Choose Username" id="join_username" required>
+                        </div>
+                        <div>
+                            <label for="login_password" class="formlabel">Password</label>
+                            <input type="password" placeholder="Enter Your Password" id="join_password" required>
+                        </div>
+                        <div class="rememberme">
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn-thm-1 btn-md btn-25 fw-600" role="join">Join</button>
+                        <p class="txt-primary ft-700 ft-85" id="joingwarning"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
 <script src='/src/scripts/main.js'></script>
+
+<style>
+    [taphead]{
+        float: left;
+    }
+    .taps-box{
+        display: block;
+    }
+    .taps-box.hide{
+        display: none;
+    }
+    .rememberme{
+        margin-bottom: 10px;
+    }
+</style>
+
+<script>
+    function redirect(){
+        let url = new URL(window.location);
+        let forward = url.searchParams.entries().next();
+        window.location = forward.value[1];
+    }
+
+
+    // Taps System
+    let tapheads = document.querySelectorAll('[taphead]');
+    tapheads.forEach((tapbox)=>{
+        tapbox.addEventListener('click', ()=>{
+            tapheads.forEach((other)=>{
+                other.classList.add('outline');
+                document.querySelector(`[tap="${other.getAttribute("taphead")}"]`).classList.add('hide');
+            })
+            tapbox.classList.remove('outline');
+            document.querySelector(`[tap="${tapbox.getAttribute("taphead")}"]`).classList.remove('hide');
+        })
+    })
+
+
+    // Login System
+    let loginBtn = document.querySelector('[role="login"]');
+    let logingwarning = document.querySelector('#logingwarning');
+    let login_username = document.querySelector('#login_username');
+    let login_password = document.querySelector('#login_password');
+    loginBtn.addEventListener('click', async (e)=>{
+        e.preventDefault();
+
+        let usrname = login_username.value;
+        let psswd = login_password.value;
+        
+        if(usrname.length > 0 && psswd.length > 0){
+            let loginData = await JSON.parse(window.localStorage.getItem('userdata'));
+            if(loginData != null && loginData["username"] && loginData["password"]){
+                if(loginData["username"] == usrname && loginData["password"] == psswd){
+
+                    window.sessionStorage.setItem('loginCredentials', true);
+                    redirect();
+
+                } else{
+                    logingwarning.textContent = "Wrong login data!";
+                }
+            } else{
+                logingwarning.textContent = "This account doesn't exists!";
+            }
+        } else{
+            logingwarning.textContent = "Please, Enter all required data!";
+        }
+    })
+
+
+    // Register System
+    let joinBtn = document.querySelector('[role="join"]');
+    let joingwarning = document.querySelector('#joingwarning');
+    let join_email = document.querySelector('#join_email');
+    let join_username = document.querySelector('#join_username');
+    let join_password = document.querySelector('#join_password');
+    joinBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        let userData = {
+            email: join_email.value,
+            username: join_username.value,
+            password: join_password.value
+        }
+
+        if(userData.username.length > 0 && userData.password.length > 0 && userData.email.length > 0){
+            window.localStorage.setItem('userdata', JSON.stringify(userData));
+            window.sessionStorage.setItem('loginCredentials', true);
+            redirect()
+        } else{
+            joingwarning.textContent = "Please, Enter all required data!";
+        }
+    })
+
+</script>
