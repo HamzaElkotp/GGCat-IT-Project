@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+}
+*:not(i) {
+    font-family: "Reddit Mono", monospace;
+}
+:root{
+    --primary10: #7c13ff;
+    --bg100: #181823;
+    --primary20: #391660;
+    --secondary10: #fff;
+    --secondary30: #d1d1d1;
+    --secondary20: #eeeeee;
+}
+.box-holder{
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--bg90);
+}
+.box.w-90{
+    width: 85%;
+}
+.box.p-0{
+    padding: 0;
+}
+.box.hcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: var(--bg100);
+    margin: 0;
+}
+section.edit{
+    margin-bottom: 15%;
+}
+h1.Profile{
+    color: var(--primary10);
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-body{
+    display: flex;
+}
+.form-wrapper{
+    /* position: relative; */
+    color: var(--primary10);
+    margin-left: 5%;
+}
+input:not(label input){
+    font-size: 16px;
+    padding: 10px;
+    /* margin-bottom: 15px; */
+    /* background-color: var(--secondary20); */
+    border: 2px solid var(--primary40);
+}
+input:focus{
+    border: 2px solid var(--primary10);
+    outline: transparent;
+}
+.imag1{
+    /* width: 60%; */
+    height: auto;
+}
+.text{
+    width: 180%;
+}
+.update{
+    /* position:absolute; */
+    /* left: 135%; */
+    /* padding: 5%; */
+    /* width: 45%; */
+    cursor: pointer;
+    /* border: 2px solid var(--primary10); */
+    /* color: var(--primary10); */
+    transition: 0.3s;
+}
+.update:hover{
+    background-color:var(--primary10);
+    color: var(--secondary20);
+}
+.form1{
+    display:inline-block;
+    color: var(--primary10);
+}
+section.ranks{
+    margin-bottom: 10%;
+}
+h1.rank{
+    color: var(--primary10);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 4%;
+}
+.rank3{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.rank3 thead th{
+    background-color: var(--primary10);
+    color: var(--secondary10);
+    text-align: left;
+    font-weight: bold;
+}
+.rank3 th{
+    padding: 15px 20px;
+}
+.rank3 td{
+    padding: 20px 20px;
+}
+.rank3 tbody tr{
+    border-bottom: 1px solid var(--secondary30);
+}
+.rank3 tbody tr:nth-of-type(even) {
+    background-color: var(--secondary20);
+    font-weight: bold;
+    color: var(--primary10);
+}
+.rank3 tbody tr:nth-of-type(odd) {
+    background-color: var(--secondary10);
+}
+.trophy{
+    color: var(--primary10);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 4%;
+}
+.box-collection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box-collection .child{
+    background-color: #7c13ff;
+    box-shadow: 0 5px 15px 0;
+    margin: 2%;
+    padding: 1.5%;
+    width: 10em;
+    transition: all 0.5s ease;
+    float: left;
+}
+.box-collection .child:hover{
+    scale: 1.1;
+}
+.box-collection.three .child{
+    width: calc(100%/3);
+}
+.child.bg-wt-20{
+    background-color: var(--secondary20);
+}
+img{
+    width:100%;
+    height: 10em;
+}
+img:hover{
+    opacity: 0.9;
+}
+.levels{
+    color: var(--primary20);
+    margin-top: 5%;
+    font-size: 1.5rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.icon1{
+    color: rgba(134, 24, 24, 0.781);
+    padding-top: 1.5%;
+    font-size: 2rem;
+}
+.icon2{
+    color: gold;
+    padding-top: 1.5%;
+    font-size: 2rem;
+}
+.icon3{
+    color: silver;
+    padding-top: 1.5%;
+    font-size: 2rem;
+}
+

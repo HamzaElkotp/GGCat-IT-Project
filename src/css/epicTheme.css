@@ -33,7 +33,7 @@
     padding: 30px;
     box-sizing: border-box;
 }
-.box-holder.vcenter{
+.box-holder.vcenter{                                
     height: 100vh;
     position: relative;
 }
