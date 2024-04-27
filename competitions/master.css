@@ -28,7 +28,7 @@ h2,h1,h3{
     margin-right: 15px;
 }
 .right{
-    margin-left: 15px;
+    margin-left: 40px;
 }
 .Up{
     display: flex;
@@ -46,8 +46,8 @@ table{
     width:100%;
 }
 td,th{
-    width:20%;
-    padding: 2%;
+    /* width:20%; */
+    /* padding: 2%; */
     color:var(--secondary20);
 }
 h1{
@@ -55,5 +55,5 @@ h1{
     justify-content: center;
 }
 li,td,th{
-    font-size: 25px;
+    /* font-size: 25px; */
 }
