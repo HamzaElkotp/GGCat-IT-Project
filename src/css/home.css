@@ -1,13 +1,6 @@
 
 .content{
-    /* color: white;
-    width: 80%;
-    padding-left: 300px;
-    text-align: center;
-    position: absolute;
-    padding-top: 12%; */
-
-
+    
     color: white;
     width: 80%;
     text-align: center;
@@ -36,37 +29,141 @@
     }
 .button:hover{
     background: #7c13ff ;
-    transition: all 1s ease-in-out;
+    transition: all 1s linear;
     color: #fff;
     scale: 1.1;
 
     }
 #video-bg {
-    /* position: absolute; */
     box-sizing: border-box;
     width:100%;
-    /* padding-left:10%; */
-    /* padding-top: 3%; */
+
     }
-.game{
-    background-image: url("/assets/images/fg4.jpg");
-    opacity:0.6;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 672px;
-}
+
 .part2{
     width: 100%;
+ height: 100%;
     
 }
 h1.zone{
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
+   
+   margin-left: 380px;
+    font-size: 30px;
     font-weight: bold;
-    
+    color: #7c13ff;
+    width: 280px;
+}
+h1 span{
+    font-size :45px; 
 }
 
-    
-    
+.card1{
+   width: 300px;
+   height: 450px;
+   transition: 0.5s ease-in-out;
+   border-top: #7c13ff ;
+   border-radius: 15px;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   display: inline-block;
+   margin-right: 48px;
+
+}
+
+.card1:hover{
+    transform: translateY(20px);
+
+}
+.card1::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 15px;
+    display: block;
+    transition: all 0.5s linear;
+    z-index: 1;
+}
+.card1:hover::before{
+    opacity: 1;
+}
+
+.card1 img {
+    width: 300px;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+    top: 0;
+    position: absolute;
+    border-radius: 15px;
+    left: 0;
+}
+
+.info1{
+    position:relative;
+    z-index: 2;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 310px;
+    padding-right: 10px;
+    left: 0;
+    padding-left: 10px;
+    opacity: 0;
+
+    transform: translateY(-20px);
+    transition: all 0.5s linear; 
+}
+.card1:hover .info1 {
+    opacity: 1;
+
+}
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
+.card3{
+ margin-right:0 ;
+
+}
+
+.slideshow-container {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .part3 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }

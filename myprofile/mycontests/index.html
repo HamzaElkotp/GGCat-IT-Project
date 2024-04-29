@@ -3,11 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>My Favoiurites</title>
+    <title>My competition</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
     <link rel="stylesheet" href="projectfavorites.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/myCompetition.css'>
     
     
 </head>
@@ -18,11 +19,70 @@
         <div class="sidebar" id="sidebar">
 
         </div>
-        <div class="db-holder p-30">
+        <div class="box-holder">
+            <div class="box w-90 p-0 hcenter">
+              <h1 class="f1">my old competition</h1>
+             <table class="table1">
+               <tr>
+                 <td></td>
+                  <td>name</td>
+                  <td>start </td>
+                  <td>end</td>
+                  <td>rank</td>
+                  <td>prize</td>
+               </tr>
+               <tr>
+                  <td rowspan="3" class="td1">Fortnite</td>
+                  <td >Contest Kick-Off</td>
+                  <td>2024-04-30 - :00:00</td>
+                  <td>2024-04-30 - :30:00</td>
+                  <td>1</td>
+                  <td>$8,000</td>
+               </tr>
+               <tr>
+                  <td>Round 1 Start</td>
+                  <td>2024-04-30 - :00:00</td>
+                  <td>2024-04-30T12:00:00</td>
+                  <td class>5</td>
+                  <td class>-</td>
+               </tr>
+               <tr>
+                <td>Round 2 Start</td>
+                <td>2024-04-30 - :00:00</td>
+                <td>2024-04-30T14:00:00</td>
+                <td>2</td>
+                <td>$5,000</td>
+               </tr>
+               <tr> 
+                  <td class="td1" rowspan="2">Rocket League </td>
+                  <td>Contest Kick-Off</td>
+                  <td>2024-05-01 - :00:00</td>
+                  <td>2024-05-01 - :30:00</td>
+                 <td class=>4</td>
+                  <td class=>-</td>
 
-            <!-- Put every thing here -->
-            
-
+               </tr>
+               <tr>
+                  <td>Round 1 Start</td>
+                  <td>2024-05-01 - :00:00</td>
+                  <td>2024-05-01T12:00:00</td>
+                  <td class=>3</td>
+                  <td>$2,000</td>
+               </tr>
+              </table>
+              <h1 class="h2">Upcoming competitions</h1>
+              <table id="table-data">
+                <tr>
+                   
+                    <td>name</td>
+                    <td>start </td>
+                    <td>end</td>
+                </tr>
+                <tbody id="body">
+                   
+                </tbody>
+              </table>
+            </div>
         </div>
     </div>
 
@@ -31,3 +91,32 @@
 
 </html>
 <script src='/src/scripts/main.js'></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    populateTable();
+});
+
+function populateTable() {
+    var data = JSON.parse(localStorage.getItem("userData")) || [];
+    var tableBody = document.getElementById("body");
+    tableBody.innerHTML = "";
+    data.forEach(function(item, index) {
+        var row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${item.name}</td>
+            <td>${item.start}</td>
+            <td>${item.end}</td>
+            <td><button onclick="deleteItem(${index})">Delete</button></td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+function deleteItem(index) {
+    var data = JSON.parse(localStorage.getItem("userData")) || [];
+    data.splice(index, 1); 
+    localStorage.setItem("userData", JSON.stringify(data));
+    populateTable();
+}
+window.localStorage.name=1111111;
+
+</script>
