@@ -8,28 +8,84 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
     <link rel="stylesheet" href="projectfavorites.css">
-    
-    
+    <link rel="stylesheet" href="/admin/feedbacks/feedbacksforadmin.css">
 </head>
 <body>
-
-
     <div class="db-menu">
         <div class="sidebar" id="sidebar">
-
-            <!-- لو حطيت حاجه هنا هبهدلك -->
-
         </div>
         <div class="db-holder p-30">
-
-            <!-- Put every thing here -->
-            
-
+            <p id="p1"> FEEDBACKS</p> 
+            <div id="selectbox">
+                <label for="select-game" style="color: cornsilk;">Show</label>
+                <select id="select-game">
+                    <option value="All">All</option>
+                    <option value="Rocket-League"> Rocket League</option>
+                    <option value="Fall-Guys">Fall Guys</option>
+                    <option value="Fortnite">Fortnite</option>
+                </select>
+            </div>
+            <table class="content-table table" class="top">
+                <thead>
+                    <tr>
+                        <th>user</th>
+                        <th>date</th>
+                        <th>edit date</th>
+                        <th>game</th>
+                        <th>rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-game="Rocket-League">
+                        <td>User 1</td>
+                        <td>2024-04-28</td>
+                        <td>2024-04-28</td>
+                        <td>Rocket League</td>
+                        <td>85</td>
+                    </tr>
+                    <tr data-game="Fall-Guys">
+                        <td>User 2</td>
+                        <td>2024-04-28</td>
+                        <td>2024-04-28</td>
+                        <td>Fall Guys</td>
+                        <td>69</td>
+                    </tr>
+                    <tr data-game="Fortnite">
+                        <td>User 3</td>
+                        <td>2024-04-28</td>
+                        <td>2024-04-28</td>
+                        <td>Fortnite</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <script>
+        // Function to filter rows based on selected game
+        function filterRows(selectedGame) {
+            var rows = document.querySelectorAll('.content-table tbody tr');
+            rows.forEach(function(row) {
+                var gameName = row.dataset.game.trim(); // Get game name from data attribute
+                if (selectedGame === 'All' || gameName.toLowerCase() === selectedGame.toLowerCase()) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
 
-  
+        // Retrieve selected game from local storage and filter rows
+        var selectedGame = localStorage.getItem('selectedGame') || 'All';
+        document.getElementById('select-game').value = selectedGame; // Set selected option in the dropdown
+        filterRows(selectedGame);
+
+        // Event listener for select element change
+        document.getElementById('select-game').addEventListener('change', function() {
+            var selectedGame = this.value;
+            localStorage.setItem('selectedGame', selectedGame); // Save selected game to local storage
+            filterRows(selectedGame); // Filter rows based on selected game
+        });
+    </script>
 </body>
-
 </html>
-<script src='/src/scripts/main.js'></script>
