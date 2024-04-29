@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html> 
 <html>
 
 <head>
@@ -16,7 +16,7 @@
 <body>
 
 
-    <div class="db-menu">
+    <!-- <div class="db-menu"> -->
         <div class="sidebar" id="sidebar">
 
         </div>
@@ -25,46 +25,123 @@
             <!-- Put every thing here -->
 
             <form action="  " target="_blank">
+                 <div class="icon" style="color:#7c13ff;margin-left: 250px;width:680px;">
+               <label class="formlabel">&#128104;Name:</label> 
+                <input class="Name" title="Name" name="Name" placeholder="Enter Name" type="text" >
 
-                &#128104;Name:
-                <input title="Name" name="Name" placeholder="Enter Name" type="text" required>
 
-
-                &#128231;Email Address:
-                <input title="Email" name="Email" placeholder="Enter Email @" type="email" required>
-
-                &#127918;Choose your Games
-                <select name="game">
+                <label class="formlabel" >&#128231;Email Address:</label>
+                <input class="Email" title="Email" name="Email" placeholder="Enter Email @" type="email" >
+            
+               <label class="formlabel">&#127918;Choose your Games</label> 
+            </div>
+            
+                <select class="sel" name="game" style="color:#7c13ff;margin-left: 350px;">
                     <optgroup label="Epic Game">
-                        <option value="FORTNITE">FORTNITE</option>
-                        <option value="ROCKET LEAGUE">ROCKET LEAGUE</option>
+                        <option class="For" value="FORTNITE">FORTNITE</option>
+                        <option class="Roc" value="ROCKET LEAGUE">ROCKET LEAGUE</option>
                     </optgroup>
                     <optgroup label="Funny Games">
-                        <option value="FALL GUYS">FALL GUYS</option>
+                        <option class="Fun" value="FALL GUYS">FALL GUYS</option>
                     </optgroup>
                 </select>
 
-                <p>&#128512;Do you satisfy with our service?</p>
+                <p style="color:#7c13ff;">&#128512;Do you satisfy with our service?</p>
+
+                   <div style="display: inline-block;" >
+                   <label  class="formlabel">Yes</label> <input class="Yes"  style="display: block;"  type="radio" name="shipping" id="rad1">
 
 
-                    Yes<input type="radio" name="shipping" id="rad1" value="standard">
+                    <label class="formlabel" >No</label><input class="No" type="radio" name="shipping" id="rad2" >
+                
+                </div>
+                  <div style="display: block;" class="formlabel">Rate:</div> 
+               
+                  <input style="width:380px; "  class="Range" name="range" type="range" min="0" max="10">
+               
+                <p style="color:#7c13ff;">&#128221;Write your Suggestion:</p>
 
-
-                    No<input type="radio" name="shipping" id="rad2" value="standard">
-
-
-                    Rate:<input class="Range" name="range" type="range" min="0" max="10">
-
-                <p>&#128221;Write your Suggestion:</p>
-
-                <textarea class="" placeholder="Comment" title="Comment"></textarea>
-                <button class="btnlink btn-thm-1 btn-lg outline">Sumbit</button>
+                <textarea class="Text"  placeholder="Comment" title="Comment" style="width: 800px;height:250px ;"></textarea>
+                <button class="btnlink btn-thm-1 btn-lg outline"  onclick="add()" type="button">Sumbit</button>
             </form>
         </div>
     </div>
-
+ <iframe width="100px" height="100px" src="https://www.google.com/" title="DontWork" ></iframe> 
 
 </body>
 
 </html>
-<script src='/src/scripts/main.js'></script>
+
+<script>
+
+let tableData = document.querySelector("#Table");
+
+let Data = [];
+ 
+
+
+function readAll(){
+    let object = localStorage.getItem("allUsers");
+    let paredData = JSON.parse(object);
+    Data = JSON.parse(object);
+
+   
+
+    if(object != null){
+        paredData.map(ele =>{
+          `<label>
+            ${ele.Name}
+            ${ele.Email}
+            </label>
+
+            <label>
+                ${ele.Yes}
+                ${ele.No}
+                </label>
+            <textarea>
+                ${ele.Text}
+                </textarea>    
+            <select>
+                ${ele.sel}
+                </select>
+          
+          `
+        })
+    } else{
+        
+        localStorage.setItem("allUsers", "[]");
+        
+    }
+}
+readAll();
+
+function updatelocal(){
+    localStorage.setItem("allUsers",JSON.stringify(Data));
+}
+function add(){
+    var Name =document.querySelector(".Name").value;
+    var Email =document.querySelector(".Email").value;
+    var Yes =document.querySelector(".Yes").value;
+    var No =document.querySelector(".No").value;
+    var Text =document.querySelector(".Text").value;
+    var sel =document.querySelector(".sel").value;
+
+    var newObj ={
+        Name:Name,
+        Email:Email,
+        Yes:Yes,
+        No:No,
+        Text:Text,
+        sel:sel,
+       
+       
+    };
+   
+    Data.push(newObj);
+   
+    updatelocal();
+    readAll();
+   
+}
+
+</script>
