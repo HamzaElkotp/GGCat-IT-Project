@@ -5,57 +5,24 @@
     scroll-behavior: smooth;
     text-transform: capitalize;
 }
-*:not(i) {
-    font-family: "Reddit Mono", monospace;
-}
-:root{
-    --primary10: #7c13ff;
-    --bg100: #181823;
-    --primary20: #391660;
-    --secondary10: #fff;
-    --secondary30: #d1d1d1;
-    --secondary20: #eeeeee;
-}
-.box-holder{
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: var(--bg90);
-}
-.box.w-90{
-    width: 85%;
-}
-.box.p-0{
-    padding: 0;
-}
-.box.hcenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 section.edit{
     margin-bottom: 15%;
 }
 h1.Profile{
-    color: var(--primary10);
     text-align: center;
     padding-bottom: 4%;
-    font-size: 2rem;
     font-weight: 700;
 }
 .card-body{
     display: flex;
 }
 .form-wrapper{
-    /* position: relative; */
     color: var(--primary10);
     margin-left: 5%;
 }
 input:not(label input){
     font-size: 16px;
     padding: 10px;
-    /* margin-bottom: 15px; */
-    /* background-color: var(--secondary20); */
     border: 2px solid var(--primary40);
 }
 input:focus{
@@ -63,37 +30,16 @@ input:focus{
     outline: transparent;
 }
 .imag1{
-    /* width: 60%; */
     height: auto;
-}
-.text{
-    width: 180%;
-}
-.update{
-    /* position:absolute; */
-    /* left: 135%; */
-    /* padding: 5%; */
-    /* width: 45%; */
-    cursor: pointer;
-    /* border: 2px solid var(--primary10); */
-    /* color: var(--primary10); */
-    transition: 0.3s;
-}
-.update:hover{
-    background-color:var(--primary10);
-    color: var(--secondary20);
 }
 .form1{
     display:inline-block;
-    color: var(--primary10);
 }
 section.ranks{
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 h1.rank{
-    color: var(--primary10);
     text-align: center;
-    font-size: 2rem;
     font-weight: 700;
     padding-bottom: 4%;
 }
@@ -129,10 +75,19 @@ h1.rank{
 .rank3 tbody tr:nth-of-type(odd) {
     background-color: var(--secondary10);
 }
-.trophy{
+.add{
+    background-color: var(--secondary20);
+    font-weight: bold;
     color: var(--primary10);
+    width: 15%;
+    margin-left: 85%;
+}
+.add:hover{
+    background-color: var(--primary10);
+    color: var(--secondary20);
+}
+.trophy{
     text-align: center;
-    font-size: 2rem;
     font-weight: 700;
     padding-bottom: 4%;
 }
@@ -142,19 +97,14 @@ h1.rank{
     flex-wrap: wrap;
 }
 .box-collection .child{
-    background-color: #7c13ff;
     box-shadow: 0 5px 15px 0;
     margin: 2%;
     padding: 1.5%;
     width: 10em;
     transition: all 0.5s ease;
-    float: left;
 }
-.box-collection .child:hover{
-    scale: 1.1;
-}
-.box-collection.three .child{
-    width: calc(100%/3);
+.box-collection.three .child:hover{
+    transform: scale(1.1);
 }
 .child.bg-wt-20{
     background-color: var(--secondary20);
@@ -176,17 +126,17 @@ img:hover{
     justify-content: space-between;
 }
 .icon1{
-    color: rgba(134, 24, 24, 0.781);
-    padding-top: 1.5%;
-    font-size: 2rem;
-}
-.icon2{
     color: gold;
     padding-top: 1.5%;
     font-size: 2rem;
 }
-.icon3{
+.icon2{
     color: silver;
+    padding-top: 1.5%;
+    font-size: 2rem;
+}
+.icon3{
+    color: rgba(134, 24, 24, 0.781);
     padding-top: 1.5%;
     font-size: 2rem;
 }
