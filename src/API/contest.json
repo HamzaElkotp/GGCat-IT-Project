@@ -4,7 +4,7 @@
         "name": "Fortnite Championship",
         "date": "2024-04-30",
         "description": "A competitive Fortnite gaming contest where top players battle for the championship title. The contest consists of multiple rounds leading to the grand finals.",
-        "images": ["/assets/images/ftnite.webp", "/assets/images/ftnite2.jpg"],
+        "images": ["/assets/images/ftnite1.webp", "/assets/images/ftnite2.jpg"],
         "agenda": [
             {
                 "name": "Contest Kick-Off",
@@ -38,7 +38,7 @@
             }
         ],
         "prizes": {
-            "1": "$8,000",
+            "1": "$18,000",
             "2": "$5,000",
             "3": "$3,000"
         }

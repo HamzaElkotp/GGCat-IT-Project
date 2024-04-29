@@ -24,26 +24,28 @@
             <div>
                 <h1 class="Up">Up coming competitions </h1>
                 <div class="two-cards">
-                    <div class="one-card br-20">
+                    <div class="one-card1 br-20">
                         <div class="bg-prim20 p-10">
                             <div >
-                                <img src="/assets/images/bg.jpg" class="img">
+                                <img id="game1img" src="/assets/images/bg.jpg" class="img">
                             </div>
                             <div>
-                                <h1>Centr titel</h1>
-                                <h3>small text</h3>
+                                <h1 id="game1titel"></h1>
+                                <h2 id="game1date"></h2>
+                                <h3 id="game1description"></h3>
                                 <a href="/competitions/contest/2005/index.html" class="btnlink btn-thm-1 btn-fs btn-lg" target="_blank">See detalis </a>
                             </div>
                         </div>
                     </div>
-                    <div class="one-card br-20 right">
+                    <div class="one-card2 br-20 right">
                         <div class="bg-prim20 p-10">
                             <div >
-                                <img src="/assets/images/rocketleague2.jpg" class="img">
+                                <img id="game2img" src="/assets/images/rocketleague2.jpg" class="img">
                             </div>
                             <div>
-                                <h1>Centr titel</h1>
-                                <h3>small text</h3>
+                                <h1 id="game2titel"></h1>
+                                <h2 id="game2date"></h2>
+                                <h3 id="game2description"></h3>
                                 <a href="/competitions/contest/2016/index.html" class="btnlink btn-thm-1 btn-fs btn-lg" target="_blank">See detalis</a>
                             </div>
                         </div>
@@ -51,108 +53,79 @@
             </div>
             <div class="ranks">
                 <table class="rank3 br-10">
-                    <tr>
-                        <th>competition name</th>
-                        <th>Start</th>
-                        <th>End</th>
-                        <th>Winers</th>
-                        <th>prizes</th>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td> 
-                            <ol>
-                                <li>sayed saber</li>
-                                <li>Retage saber </li>
-                                <li>Jana saber</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>10,000$ for first place</li>
-                                <li>5,000$ for second place</li>
-                                <li>2,000$ for third place</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td> 
-                            <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>10,000$ for first place</li>
-                                <li>5,000$ for second place</li>
-                                <li>2,000$ for third place</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td>
-                            <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>10,000$ for first place</li>
-                                <li>5,000$ for second place</li>
-                                <li>2,000$ for third place</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td> 
-                            <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>10,000$ for first place</li>
-                                <li>5,000$ for second place</li>
-                                <li>2,000$ for third place</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td> 
-                            <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>10,000$ for first place</li>
-                                <li>5,000$ for second place</li>
-                                <li>2,000$ for third place</li>
-                            </ul>
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>competition name</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Winers</th>
+                            <th>prizes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyid">
+                            <tr>
+                                <td>Fantasy RPG Tournament</td>
+                                <td>2024-06-15</td>
+                                <td>2024-06-30</td>
+                                <td>Team Wizards, Team Knights, Team Rogues</td>
+                                <td>
+                                    <ul>
+                                        <li>1st Place: Legendary Loot and $1000</li>
+                                        <li>2nd Place: Epic Gear and $500</li>
+                                        <li>3rd Place: Rare Items and $250</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>First-Person Shooter Championship</td>
+                                <td>2024-07-10</td>
+                                <td>2024-07-20</td>
+                                <td>Sniper Elite, Doom Squad, Cyber Titans</td>
+                                <td>
+                                    <ul>
+                                        <li>1st Place: Gaming Console and $500</li>
+                                        <li>2nd Place: Gaming Headset and $300</li>
+                                        <li>3rd Place: Gaming Mouse and $150</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MOBA Clash</td>
+                                <td>2024-08-01</td>
+                                <td>2024-08-15</td>
+                                <td>Team Valor, Team Unity</td>
+                                <td>
+                                    <ul>
+                                        <li>1st Place: Gaming Keyboard and $300</li>
+                                        <li>2nd Place: In-Game Currency and $200</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Racing Tournament</td>
+                                <td>2024-09-01</td>
+                                <td>2024-09-10</td>
+                                <td>Speed Demons, Racing Legends</td>
+                                <td>
+                                    <ul>
+                                        <li>1st Place: Racing Wheel and $400</li>
+                                        <li>2nd Place: Racing Game Bundle and $200</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fighting Game Showdown</td>
+                                <td>2024-10-15</td>
+                                <td>2024-10-25</td>
+                                <td>Combo Masters, Street Warriors</td>
+                                <td>
+                                    <ul>
+                                        <li>1st Place: Arcade Stick and $500</li>
+                                        <li>2nd Place: Fighting Game Collection and $300</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -160,7 +133,9 @@
     </div>
 
     <footer id="footer"></footer>
-
+    <script src="/competitions/master.js">
+</script>
+    
 </body>
 </html>
 <script src='/src/scripts/main.js'></script>
