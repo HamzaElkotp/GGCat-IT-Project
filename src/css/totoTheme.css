@@ -1,0 +1,144 @@
+
+
+:root{
+    --bg100: #fff;
+    --bg90: #eeeeee;
+    --bg80: #d1d1d1;
+    --bg70: #b0b0b0;
+    
+    --primary10: #7c13ff;
+    --primary20: #391660;
+    --primary30: #251349;
+    --primary40: #1e1336;
+
+    --secondary10: #181823;
+    --secondary20: #1d1c2a;
+    --secondary30: #201e2f;
+    --secondary40: #1c1a2a;
+}
+
+/* buttons sizes with border redius*/
+.btn-sm {
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+
+.btn-se-md {
+    font-size: 14px;
+    padding: 7px 15px;
+    border-radius: 16px;
+}
+
+.btn-md {
+    font-size: 16px;
+    padding: 8px 17px;
+    border-radius: 18px;
+}
+
+.btn-lg {
+    font-size: 18px;
+    padding: 10px 19px;
+    border-radius: 20px;
+}
+
+.btn-fs {
+    width: 100%;
+}
+
+.btn-50 {
+    width: 50%;
+}
+
+.btn-25 {
+    width: 25%;
+}
+
+
+
+
+/* Box Sizing with border redius */
+
+
+.box.w-85{
+    width: 85%;
+    border-radius: 10px;
+}
+
+.box.w-80{
+    width: 80%;
+    border-radius: 14px;
+}
+
+.box.w-75{
+    width: 75%;
+    border-radius: 18px;
+}
+
+.box.w-65{
+    width: 65%;
+    border-radius: 22px;
+}
+
+.box.w-50{
+    width: 50%;
+    border-radius: 30px;
+}
+
+.box.w-33{
+    width: 33.33%;
+    border-radius: 35px;
+}
+
+.box.w-25{
+    width: 25%;
+    border-radius: 40px;
+}
+
+
+
+   
+/* image Sizing with border redius */
+.img-box.fit{
+    height: fit-content;
+}
+.img-wfull{
+    width: 100%;
+    border-radius: 40px;
+}
+.img-hfull{
+    height: 100%;
+    border-radius: 35px;
+}
+.img-75{
+    width: 75%;
+    border-radius: 30px;
+}
+.img-65{
+    width: 65%;
+    border-radius: 25px;
+}
+.img-55{
+    width: 55%;
+    border-radius: 20px;
+}
+.img-50{
+    width: 50%;
+    border-radius: 15px;
+}
+.img-45{
+    width: 45%;
+    border-radius: 10px;
+}
+
+
+
+/* Container */
+.box-holder{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.box-holder.vcenter{                                
+    height: 100vh;
+    position: relative;
+}
