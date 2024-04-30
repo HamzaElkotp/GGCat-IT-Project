@@ -296,6 +296,11 @@ input::placeholder {
     font-weight: 500;
 }
 
+
+button:disabled{
+    opacity: 0.3;
+    cursor:not-allowed;
+}
 input[type="radio"]{
     width: auto;
 }

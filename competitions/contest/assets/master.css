@@ -7,13 +7,8 @@
     margin-bottom: 50px;
 }
 .banner{
-    background-image: url(/assets/images/rocketleague2.jpg);
     width: 100%;
-    height: 400px;
-    background-size: cover;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    
+    height: auto;    
 }
 .icon{
     width: 100%;
@@ -40,5 +35,11 @@ td,th{
     width:20%;
     padding: 2%;
     color:var(--secondary20);
-    font-size: 25px;
+}
+#pdate{
+    color: aliceblue;
+    text-align: center;
+}
+#pdiscription{
+    color: aliceblue;
 }
