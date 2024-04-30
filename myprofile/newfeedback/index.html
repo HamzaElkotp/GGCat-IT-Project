@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html> 
 <html>
 
 <head>
@@ -16,7 +16,7 @@
 <body>
 
 
-    <div class="db-menu">
+    <!-- <div class="db-menu"> -->
         <div class="sidebar" id="sidebar">
 
         </div>
@@ -25,46 +25,100 @@
             <!-- Put every thing here -->
 
             <form action="  " target="_blank">
+                <div>
+                    <label class="formlabel txt-secondary-20">&#128104;Name:</label> 
+                    <input class="Name" title="Name" name="Name" id="name" placeholder="Enter Name" type="text" >
+                </div>
 
-                &#128104;Name:
-                <input title="Name" name="Name" placeholder="Enter Name" type="text" required>
+                <div>
+                    <label class="formlabel txt-secondary-20" >&#128231;Email Address:</label>
+                    <input class="Email" title="Email" name="Email" placeholder="Enter Email @" type="email" >
+                </div>
+                    
+                <div>
+                    <label class="formlabel txt-secondary-20">&#127918;Choose your Games</label> 
+                    <select class="sel" name="game" id="game">
+                        <optgroup label="Epic Game">
+                            <option class="For" value="FORTNITE">FORTNITE</option>
+                            <option class="Roc" value="ROCKET LEAGUE">ROCKET LEAGUE</option>
+                        </optgroup>
+                        <optgroup label="Funny Games">
+                            <option class="Fun" value="FALL GUYS">FALL GUYS</option>
+                        </optgroup>
+                    </select>
+                </div>
 
-
-                &#128231;Email Address:
-                <input title="Email" name="Email" placeholder="Enter Email @" type="email" required>
-
-                &#127918;Choose your Games
-                <select name="game">
-                    <optgroup label="Epic Game">
-                        <option value="FORTNITE">FORTNITE</option>
-                        <option value="ROCKET LEAGUE">ROCKET LEAGUE</option>
-                    </optgroup>
-                    <optgroup label="Funny Games">
-                        <option value="FALL GUYS">FALL GUYS</option>
-                    </optgroup>
-                </select>
-
-                <p>&#128512;Do you satisfy with our service?</p>
-
-
-                    Yes<input type="radio" name="shipping" id="rad1" value="standard">
-
-
-                    No<input type="radio" name="shipping" id="rad2" value="standard">
-
-
-                    Rate:<input class="Range" name="range" type="range" min="0" max="10">
-
-                <p>&#128221;Write your Suggestion:</p>
-
-                <textarea class="" placeholder="Comment" title="Comment"></textarea>
-                <button class="btnlink btn-thm-1 btn-lg outline">Sumbit</button>
+                <div>
+                    <label class="formlabel txt-secondary-20" >&#11088;Rate:</label>
+                    <input class="Range" name="range" type="range" min="0" max="10" id="rate">
+                </div> 
+               
+                <div>
+                    <label class="formlabel txt-secondary-20">&#128221;Write your Feedback:</label>
+                    <textarea class="Text"  placeholder="Comment" title="Comment"></textarea>
+                </div>
+                  
+                <button class="btnlink btn-thm-1 btn-lg outline"  onclick="add()" type="button">Sumbit</button>
             </form>
         </div>
-    </div>
-
-
+    </div> 
 </body>
 
 </html>
-<script src='/src/scripts/main.js'></script>
+
+<script>
+
+// let tableData = document.querySelector("#Table");
+
+// let Data = [];
+ 
+
+
+let object = localStorage.getItem("myfeedbacks");
+let Data;
+
+function readAll(){
+    if(object != null){
+        Data = JSON.parse(object);
+    } else{
+        localStorage.setItem("myfeedbacks", "[]");
+        Data = JSON.parse(object);
+    }
+}
+readAll();
+
+function updatelocal(){
+    localStorage.setItem("myfeedbacks",JSON.stringify(Data));
+}
+function add(){
+    var username =document.querySelector("#name").value;
+    var gameName =document.querySelector("#game").value;
+    var Email =document.querySelector(".Email").value;
+    var Text =document.querySelector(".Text").value;
+    var rate =document.querySelector("#rate").value;
+
+    if(username == "" || (Email == "" || !Email.includes("@")) || gameName == "" || Text == "" || rate == ""){
+        alert("Please fill all the fields right");
+        return;
+    }
+
+    var id = Math.floor(Math.random() * 10000);
+
+    var newObj ={
+        username: username,
+        Email:Email,
+        id: id,
+        gamename:gameName,
+        desc:Text,
+        rate: rate
+    };
+
+    console.log(newObj);
+   
+    Data.push(newObj);
+   
+    updatelocal();
+    // readAll();
+}
+
+</script>
