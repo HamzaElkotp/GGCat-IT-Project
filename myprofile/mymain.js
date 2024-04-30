@@ -1,12 +1,21 @@
+let status = false;
+
 // Function to store profile data in local storage
 function storeProfileData() {
     // Get form values
-    var firstName = document.getElementById("fname").value;
-    var lastName = document.getElementById("lname").value;
+    var firstName = document.getElementById("fname").value || "";
+    var lastName = document.getElementById("lname").value || "";
     var username = document.getElementById("uname").value;
-    var phoneNumber = document.getElementById("phname").value;
+    var phoneNumber = document.getElementById("phname").value || "";
     var email = document.getElementById("ename").value;
     var password = document.getElementById("pname").value;
+
+    // check if email and username and password are not empty strings
+    if(username == "" || email == "" || !email.includes("@")){
+        alert("pleas enter email or username or password correctly");
+        return;
+    }
+
 
     // Create profile object
     var profile = {
@@ -19,23 +28,24 @@ function storeProfileData() {
     };
 
     // Store profile data in local storage
-    localStorage.setItem("profile", JSON.stringify(profile));
+    localStorage.setItem("userdata", JSON.stringify(profile));
+    alert("Data Updated Successfully");
 }
 
 function loadProfileData() {
     // Check if profile data exists in local storage
-    if (localStorage.getItem("profile")) {
+    if (localStorage.getItem("userdata")) {
         // Parse stored profile data
-        var profile = JSON.parse(localStorage.getItem("profile"));
+        var profile = JSON.parse(localStorage.getItem("userdata"));
 
         // Populate form fields with stored profile data
-        document.getElementById("fname").value = profile.firstName;
-        document.getElementById("lname").value = profile.lastName;
+        document.getElementById("fname").value = profile.firstName || "";
+        document.getElementById("lname").value = profile.lastName || "";
         document.getElementById("uname").value = profile.username;
-        document.getElementById("phname").value = profile.phoneNumber;
+        document.getElementById("phname").value = profile.phoneNumber || "";
         document.getElementById("ename").value = profile.email;
         document.getElementById("pname").value = profile.password;
-        console.log(localStorage.getItem("profile"));
+        console.log(localStorage.getItem("userdata"));
     }
 }
 
@@ -76,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(table){
         addButton.addEventListener('click', function(event) {
         // Iterate through the arrays simultaneously
+        if(status == false){
             event.preventDefault();
             for (let i = 0; i < data.length ; i++) {
                 const getrow=document.createElement('tr');
@@ -86,7 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 tbody.appendChild(getrow);
                 }
-            
+                status = true;
+        }   
     });
     }
 });
