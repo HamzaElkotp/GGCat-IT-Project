@@ -19,76 +19,48 @@
         <div class="db-holder p-30">
             <!-- Everything should be here -->
 
-             <div class="space">
-                <h1 class="momwidth">Competition</h1>
-                <span></span>
-                <span></span>
-            </div> 
-       
-            <h2 style="color: #7c13ff;">Competition complete</h2>    
-               <div style="font-size:20px; width:780px;color:#7c13ff;background-color: #391660;" id="number"></div>
-              <h2 style="color: #7c13ff;">Competition uncomplete</h2>
-               <div style=" font-size:20px;width:250px;color:#7c13ff;background-color: #fff;" id="numbers"></div>
-        
-
-           
-
-            <h2 class="txt-secondary" style=" margin-bottom: 50px;">Description</h2>
-            <ul>
-                <li class="txt-primary-dk ft-15">those in which players play against one another and where one player winning means another player loses</li>
-        
-            </ul>
-            <button type="button" class="btn-sm btn-del  fw-500 ft-1" onclick="adder()">Add</button>
-            <table class="content-table" id="table">
-                <thead>
-                    <tr>
-        
-                        <th class="NameOfGames">Name Of Games</th>
-                        <th class="Nameofgain">Name of gain</th>
-                        <th class="Prize">Prize</th>
-                        <th class="Date">Date</th>
-                        <th class="Time">Time</th>
-                        <th colspan="1">Control</th>
-                    </tr>
-        
-                </thead>
-                <tbody id="tbody">   
-                </tbody>
-            </table>
-    
-            <hr>
             <div class="space">
                 <h1 class="uuss">Users</h1>
                 <span></span>
                 <span></span>
             </div>
 
-             <h2 style="color: #7c13ff;">User ban</h2>
-             <div style="font-size:20px; width:250px;color:#7c13ff;background-color: #fff;" id="nos"></div>
-             <h2 style="color: #7c13ff;">User Active</h2>
-             <div style="font-size:20px; width:450px;color:#1d1c2a;background-color: #7c13ff; " id="no"></div>
+            <span class="txt-secondary-20">User ban</span>
+            <div style="font-size:20px; width:250px;color:#1d1c2a;background-color: #7c13ff;" class="pl-20" id="nos"></div>
+            <br>
+            <span class="txt-secondary-20">User Active</span>
+            <div style="font-size:20px; width:450px;color:#1d1c2a;background-color: #7c13ff;" class="pl-20" id="no"></div>
 
-                        <div id="nos"></div>
+            <div id="nos"></div>
                   
             <h2 class="txt-secondary" >Description</h2>
             <ul>
-                <li class="txt-primary-dk ft-15">Welcome to our blog dedicated to game localization best practices, interviews,
+                <li class="txt-secondary-20 ft-1">Welcome to our blog dedicated to game localization best practices, interviews,
                     video game market insights and other useful tips to make the
                     localization of your games easier.</li>
             </ul>
-            <div class="mar img-55 txt-primary">
-                First Name &#128104;:
-                <input class="FirstName" id="fname" title="Name" name="Name" type="name" required placeholder="First Name">
-                Last Name &#128104;:
-                <input class="LastName" id="lname" title="Name" name="Name" type="name" required placeholder="Last Name">
-                Email &#128231;:
-                <input class="Email" id="email" title="Email" name="Email" type="email" required placeholder="Email">
-               
-               
-                Rank &#127894; :
-                <input class="Rank" id="Rank" title="Rank" name="Rank" type="text" required placeholder="Rank">
-                Score &#9917;:
-                <input class="Score" id="Score" title="Name" name="Score" type="test" required placeholder="Score">
+            <p class="txt-secondary pt-30 ft-185" >Control Users</p>
+            <div class="">
+                <div>
+                    <label class="formlabel txt-secondary">First Name &#128104;:</label>
+                    <input class="FirstName" id="fname" title="Name" name="Name" type="name" required placeholder="First Name">
+                </div>
+                <div>
+                    <label class="formlabel txt-secondary">Last Name &#128104;:</label> 
+                    <input class="LastName" id="lname" title="Name" name="Name" type="name" required placeholder="Last Name">
+                </div>
+                <div>
+                    <label class="formlabel txt-secondary">Email &#128231;:</label> 
+                    <input class="Email" id="email" title="Email" name="Email" type="email" required placeholder="Email">
+                </div>
+                <div>
+                    <label class="formlabel txt-secondary">Rank &#127894; :</label> 
+                    <input class="Rank" id="Rank" title="Rank" name="Rank" type="text" required placeholder="Rank">
+                </div>
+                <div>
+                    <label class="formlabel txt-secondary">Score &#9917;:</label> 
+                    <input class="Score" id="Score" title="Name" name="Score" type="test" required placeholder="Score">
+                </div>
             </div>
             <button type="button" class="btn-sm btn-del  fw-500 ft-1" onclick="add()">Add</button>
             <button type="button" class="btn-sm btn-del  fw-500 ft-1" onclick="update()">Update</button>
@@ -201,37 +173,6 @@
 </style>
 
 <script>
-   
-let number = document.getElementById("number");
-let count=0;
-let outer = document.querySelector('.outer');
-
-setInterval(()=>{
-    
-    if(count==75){
-       
-        clearInterval();
-    }
-else{
-    count+=1;
-    
-    number.innerHTML = count + "%";
-}
-},100);
-
-let numbers = document.getElementById("numbers");
-let counts=0;
-setInterval(()=>{
-    if(counts==25){
-        clearInterval();
-    }
-else{
-    counts+=1;
-    numbers.innerHTML = counts + "%";
-}
-},100);
-
-
 let nos = document.getElementById("nos");
 let counters=0;
 setInterval(()=>{
@@ -255,123 +196,6 @@ else{
     no.innerHTML = counter + "%";
 }
 },100);
-
-/*===================================================*/
-let data=[{
-    NameOfGames:"Rocket League Championship",
-    Nameofgain:{
-        "1":"BlackStars",
-        "2":"Hashira",
-        "3":"MyTeam",
-    },
-    Prize:{
-        "1":"$8,000",
-        "2":"$5,000",
-        "3":"$3,000"
-    },
-    Date:"20/5/2024",
-    Time:"5pm",
-},  
-    {
-    NameOfGames:"Fortnite Championship",
-    Nameofgain:{
-        "1":"Alhaly",
-        "2":"Koko",
-        "3" :"Faver",
-    },
-    Prize:{
-        "1": "$10,000",
-        "2": "$5,000",
-        "3": "$2,000"
-    },
-    Date:"10/4/2024",
-    Time:"9pm",
-},
-];
-let table = document.querySelector("#tbody");
-
-function updatelocall(){
-    localStorage.setItem("allCom",JSON.stringify(data));
-}
-function read(){
-    updatelocall();
-    let Object = localStorage.getItem("allCom");
-    let paredata = JSON.parse(Object);
-    data = JSON.parse(Object);
-
-    table.innerHTML = ``;
-
-    if(Object != null){
-        paredata.map(ele =>{
-            table.innerHTML += `
-    <tr>
-    <td>${ele.NameOfGames}</td>
-    <td>
-        <ol>
-            <li> ${ele.Nameofgain["1"]}</li>
-            <li> ${ele.Nameofgain["2"]}</li>
-            <li> ${ele.Nameofgain["3"]}</li>
-        </td>
-    </ol>
-    
-    <td>
-        <ol>
-            <li> ${ele.Prize["1"]}</li>
-            <li> ${ele.Prize["2"]}</li>
-            <li> ${ele.Prize["3"]}</li>
-    </ol>
-    </td>
-    <td>${ele.Date}</td>    
-    <td>${ele.Time}</td>    
-                <td><button class="Updater"onclick="deletedUser(${ele.Time})">Remove</button></td>
-    </tr>
-
-    
-    `
- })
-
-}else{
-        localStorage.setItem("allCom", "[]");
-        
-    }
-    
-}
-read();
-
-function adder(){
-    var NameOfGames =document.querySelector(".NameOfGames").value;
-    var Nameofgain =document.querySelector(".Nameofgain").value;
-    var Prize =document.querySelector(".Prize").value;
-    var Date =document.querySelector(".Date").value;
-    var Time =document.querySelector(".Time").value;
-    
-
-    var newobj ={
-        NameOfGames:NameOfGames,
-        Nameofgain:Nameofgain,
-        Prize:Prize,
-        Date:Date,
-        Time:Time,
-
-
-
-    };
-    data.push(newobj);
-    updatelocall();
-    read();
-   
-}
-
-function deletedUser(Time) {
-    if(Time===null) data=data.filter(e =>Boolean(e.Time));
-    else{
-        data=data.filter(e => e.Time !==Time );
-    }
-    updatelocall();
-    read();
-    
-}
-
 
 
 /*=================================================================================================*/
@@ -400,8 +224,8 @@ function readAll(){
                 <td>${ele.ID}</td>
                 <td>${ele.Rank}</td>
                 <td>${ele.Score}</td>
-                <td><button class="edit" onclick="edit(${ele.ID})">Edit</button></td>
-                <td><button class="deleteo"onclick="deleteUser(${ele.ID})">Remove</button></td>
+                <td><button class="btn-warn" onclick="edit(${ele.ID})">Edit</button></td>
+                <td><button class="btn-del"onclick="deleteUser(${ele.ID})">Remove</button></td>
             </tr>
             `
         })
@@ -432,10 +256,14 @@ function add(){
     var FirstName =document.querySelector(".FirstName").value;
     var LastName =document.querySelector(".LastName").value;
     var Email =document.querySelector(".Email").value;
-    var id = (Math.random() * 10000);
+    var id = Math.floor(Math.random() * 10000);
     var Rank =document.querySelector(".Rank").value;
     var Score =document.querySelector(".Score").value;
     
+    if(FirstName == "" || LastName == "" || (Email == "" || !Email.includes("@")) || Rank == "" || Score == ""){
+        alert("Please fill all the fields right");
+        return;
+    }
 
     var newObj ={
         FirstName:FirstName,
