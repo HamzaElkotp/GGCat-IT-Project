@@ -8,7 +8,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/all.min.css'>
-  <link rel="stylesheet" type="text/css" href="/myprofile/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/myprofile/style.css"/>
+    <script src="mymain.js"></script>
 </head>
 <body>
     <div class="db-menu">
@@ -18,11 +19,11 @@
         <div class="db-holder p-30">
             <!-- Everything should be here -->
             <section class="edit">
-                <h1 class="Profile">Edit My Profile</h1><br>
+                <h1 class="Profile ft-2 txt-primary">Edit My Profile</h1><br>
                 <div class="card-body">
-                    <img class="imag1 br-20" src="/assets/images/26034.edit.jpg" alt="gamephoto">
+                    <img class="imag1 br-20 img-45" src="/assets/images/26034.edit.jpg" alt="gamephoto">
                     <div class="form-wrapper">
-                        <form class="form1 light" action="my profile" method="post">
+                        <form class="form1" action="profile" method="post">
                             <label for="fname">First name: </label>
                             <input type="text" id="fname" name="firstname" placeholder="enter your first name" value=""  required >
                             <label for="lname">Last name: </label>  
@@ -35,13 +36,13 @@
                             <input type="email" id="ename" name="email" placeholder="enter your email" value="" required>
                             <label for="pname">Password: </label>  
                             <input type="text" id="pname" name="password" placeholder="enter your password" value="" required>
-                            <button class="btn-lg btn-thm-1 outline">Update</button>
+                            <button type="submit" class="btn-lg btn-thm-1 outline update">Update</button>
                         </form>
                     </div>
                 </div>
             </section>
             <section class="ranks">
-                <h1 class="rank">Ranks</h1>
+                <h1 class="rank ft-2 txt-primary">Ranks</h1>
                 <table class="rank3 br-20">
                     <thead>
                         <tr>
@@ -51,51 +52,24 @@
                             <th>Fall Guys</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>name</td>
-                            <td>Fortnite frenzy challenge</td>
-                            <td>rocket rumble tournament</td>
-                            <td>fall guys showdown</td>
-                        </tr>
-                        <tr>
-                            <td>date</td>
-                            <td>6/7/2023</td>
-                            <td>5/8/2023</td>
-                            <td>10/9/2023</td>
-                        </tr>
-                        <tr>
-                            <td>scores</td>
-                            <td>800 out of 999</td>
-                            <td>20 out of 20</td>
-                            <td>12 out of 15</td>
-                        </tr>
-                        <tr>
-                            <td>postions</td>
-                            <td>5<sup>th</sup> place</td>
-                            <td>1<sup>st</sup> place</td>
-                            <td>4<sup>th</sup> place</td>
-                        </tr>
-                        <tr>
-                            <td>levels</td>
-                            <td>bronze</td>
-                            <td>gold</td>
-                            <td>silver</td>
-                        </tr>
+                    <tbody id="tbody">
+                        
                     </tbody>
                 </table>
+                <button class="btn-lg add">Load My Ranks</button>
             </section>
             <section class="trophies">
-                <h1 class="trophy">Trophies</h1>
+                <h1 class="trophy ft-2 txt-primary">Trophies</h1>
                 <div class="box-collection three">
                     <div class="child bg-wt-20 br-20">
                         <img src="/assets/images/ftnite.jpg" alt="" width="300px">
                         <div class="info">
                             <strong>
-                                <p class="levels">5<sup>th</sup> Place</p>
+                                <p class="levels">1<sup>st</sup> Place</p>
                             </strong>
                             <div class="icon1">
                                 <i class="fa-solid fa-medal"></i>
+                                <i class="fa-solid fa-trophy"></i>
                             </div>
                         </div>
                     </div>     
@@ -103,11 +77,10 @@
                         <img src="/assets/images/rocketleague2.jpg" alt="" width="300px">
                         <div class="info">
                             <strong>
-                                <p class="levels">1<sup>st</sup> Place</p>
+                                <p class="levels">3<sup>rd</sup> Place</p>
                             </strong>
                             <div class="icon2">
                                 <i class="fa-solid fa-medal"></i>
-                                <i class="fa-solid fa-trophy"></i>
                             </div>
                         </div>
                     </div>  
