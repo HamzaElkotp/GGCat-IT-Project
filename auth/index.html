@@ -8,15 +8,16 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/src/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/auth/auth.css'>
 </head>
 <body>
     
-    <div class="box-holder vcenter">
+    <div class="box-holder vcenter authbox">
         <div class="box w-80 hcenter vcenter bg-wt p-0">
-            <div class="img-35 float-l">
+            <div class="img-40 float-l">
                 <img src="/assets/images/rise.jpg" class="img-wfull" alt="authImage">
             </div>
-            <div class="img-65 float-l p-20">
+            <div class="img-60 float-l p-20">
                 <div class="taps-box">
                     <button class="btn-50 btn-thm-1 btn-md" taphead="1"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
                     <button class="btn-50 btn-thm-1 outline btn-md" taphead="2"><i class="fa-solid fa-door-open"></i> Join</button>
@@ -31,6 +32,20 @@
                         <div>
                             <label for="login_password" class="formlabel">Password</label>
                             <input type="password" placeholder="Enter Your Password" id="login_password" required>
+                        </div>
+                        <div class="pb-20">
+                            <label for="login_type" class="formlabel">Login as</label>
+                            <fieldset>
+                                    <legend>Select your role:</legend>
+                                    <div>
+                                        <input type="radio" id="Admin" name="role" value="Admin" checked="checked" />
+                                        <label for="Admin">Admin</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="Gamer" name="role" value="Gamer" />
+                                        <label for="Gamer">Gamer</label>
+                                    </div>
+                              </fieldset>
                         </div>
                         <div class="rememberme">
                             <label>
@@ -62,108 +77,88 @@
                                 <input type="checkbox" checked="checked" name="remember"> Remember me
                             </label>
                         </div>
+                        <div class="rememberme">
+                            <label>
+                                <input type="checkbox" name="agree"> Agree Terms Of Use
+                            </label>
+                        </div>
                         <button class="btn-thm-1 btn-md btn-25 fw-600" role="join">Join</button>
                         <p class="txt-primary ft-700 ft-85" id="joingwarning"></p>
                     </form>
+                    <p class="txt-primary ft-800 ft-1 title" id="termsOfUse"><i class="fas fa-scroll"></i> Show Privacy Policy & Rules</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="box w-80 hcenter bg-wt p-20 terms" id="terms">
+        <div class="tab">
+            <button class="tablinks active" onclick="toggleTap('terms')" btnid="terms">Terms</button>
+            <button class="tablinks" onclick="toggleTap('privacy')" btnid="privacy">Privacy</button>
+            <button class="tablinks" onclick="toggleTap('rules')" btnid="rules">Rules</button>
+        </div>
+        <div tapid="terms" class="tabcontent active">
+            <h3>📙 Terms</h3>
+            <p>
+                Terms of Use for GGCat Gaming Website
+
+                Welcome to GGCat, a gaming website dedicated to providing an enjoyable and engaging experience for all users. By accessing or using the GGCat website (the "Site") and its associated services, you agree to be bound by the following terms and conditions (the "Terms of Use"). If you do not agree with these Terms of Use, please do not use the Site.
+
+                <ul>
+                    <li>User Conduct:</li>
+                    You agree to use the Site in a responsible manner, abiding by all applicable laws and regulations. You must not engage in any activity that disrupts, interferes with, or negatively impacts the Site's functionality or other users' experiences.
+                    <li>Intellectual Property:</li>
+                    All content on the Site, including but not limited to text, images, videos, and software, is owned by GGCat or its licensors. You may not use, copy, modify, distribute, or make commercial use of this content without prior written consent from GGCat.
+                    <li>User-Generated Content:</li>
+                    If you contribute or submit any user-generated content (UGC) to the Site, you represent and warrant that you have the necessary rights to do so, and you grant GGCat a non-exclusive, worldwide, royalty-free, perpetual license to use, reproduce, modify, adapt, and publish such UGC for the purposes of operating and promoting the Site.
+                </ul>
+            </p>
+        </div>
+        
+        <div tapid="privacy" class="tabcontent">
+            <h3>📜 Privacy</h3>
+            <p>
+                GGCat respects your privacy and is committed to protecting your personal information. Please review our Privacy Policy, which explains how we collect, use, and protect your data.
+            </p>
+        </div>
+        
+        <div tapid="rules" class="tabcontent">
+            <h3>📝 Rules</h3>
+            <p>
+                Rules for a Gaming Community Website
+
+                To ensure a positive and inclusive environment on our gaming community website, we have established the following rules. By participating in our community, you agree to abide by these rules.
+
+                <ul>
+                    <li>Respect:</li>
+                    Treat all community members with respect and courtesy. No personal attacks, harassment, or bullying will be tolerated.
+                    <li>Language and Content:</li>
+                    All content on the Site, including but not limited to text, images, videos, and software, is owned by GGCat or its licensors. You may not use, copy, modify, distribute, or make commercial use of this content without prior written consent from GGCat.
+                    <li>Spam and Advertising:</li>
+                    Do not post copyrighted material without proper permission or attribution. Respect the creative work of others.
+                </ul>
+
+                By adhering to these rules, you contribute to a safe, welcoming, and enjoyable environment for all members of our gaming community.
+            </p>
+        </div>
+    </div>
+    
 
 </body>
 </html>
 <script src='/src/scripts/main.js'></script>
-
-<style>
-    [taphead]{
-        float: left;
-    }
-    .taps-box{
-        display: block;
-    }
-    .taps-box.hide{
-        display: none;
-    }
-    .rememberme{
-        margin-bottom: 10px;
-    }
-</style>
-
+<script src='/auth/authSystem.js'></script>
 <script>
-    function redirect(){
-        let url = new URL(window.location);
-        let forward = url.searchParams.entries().next();
-        window.location = forward.value[1];
-    }
+    function toggleTap(tapid) {
+        let activeTap = document.querySelector(".tablinks.active");
+        activeTap.classList.remove('active');
 
+        let activeTapBtn = document.querySelector(".tabcontent.active");
+        activeTapBtn.classList.remove('active');
 
-    // Taps System
-    let tapheads = document.querySelectorAll('[taphead]');
-    tapheads.forEach((tapbox)=>{
-        tapbox.addEventListener('click', ()=>{
-            tapheads.forEach((other)=>{
-                other.classList.add('outline');
-                document.querySelector(`[tap="${other.getAttribute("taphead")}"]`).classList.add('hide');
-            })
-            tapbox.classList.remove('outline');
-            document.querySelector(`[tap="${tapbox.getAttribute("taphead")}"]`).classList.remove('hide');
-        })
-    })
+        let currTapBtn = document.querySelector(`[btnid="${tapid}"]`);
+        currTapBtn.classList.add('active');
 
-
-    // Login System
-    let loginBtn = document.querySelector('[role="login"]');
-    let logingwarning = document.querySelector('#logingwarning');
-    let login_username = document.querySelector('#login_username');
-    let login_password = document.querySelector('#login_password');
-    loginBtn.addEventListener('click', async (e)=>{
-        e.preventDefault();
-
-        let usrname = login_username.value;
-        let psswd = login_password.value;
-        
-        if(usrname.length > 0 && psswd.length > 0){
-            let loginData = await JSON.parse(window.localStorage.getItem('userdata'));
-            if(loginData != null && loginData["username"] && loginData["password"]){
-                if(loginData["username"] == usrname && loginData["password"] == psswd){
-
-                    window.sessionStorage.setItem('loginCredentials', true);
-                    redirect();
-
-                } else{
-                    logingwarning.textContent = "Wrong login data!";
-                }
-            } else{
-                logingwarning.textContent = "This account doesn't exists!";
-            }
-        } else{
-            logingwarning.textContent = "Please, Enter all required data!";
-        }
-    })
-
-
-    // Register System
-    let joinBtn = document.querySelector('[role="join"]');
-    let joingwarning = document.querySelector('#joingwarning');
-    let join_email = document.querySelector('#join_email');
-    let join_username = document.querySelector('#join_username');
-    let join_password = document.querySelector('#join_password');
-    joinBtn.addEventListener('click', (e)=>{
-        e.preventDefault();
-
-        let userData = {
-            email: join_email.value,
-            username: join_username.value,
-            password: join_password.value
-        }
-
-        if(userData.username.length > 0 && userData.password.length > 0 && userData.email.length > 0){
-            window.localStorage.setItem('userdata', JSON.stringify(userData));
-            window.sessionStorage.setItem('loginCredentials', true);
-            redirect()
-        } else{
-            joingwarning.textContent = "Please, Enter all required data!";
-        }
-    })
-
+        let currTap = document.querySelector(`[tapid="${tapid}"]`);
+        currTap.classList.add('active');
+    } 
 </script>

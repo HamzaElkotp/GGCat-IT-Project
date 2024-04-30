@@ -1,238 +1,83 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <link rel="stylesheet" href="css/theam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div style="background-color: rgb(206, 206, 206);">
-        <p>.btn-sm</p>
-        <button class="btn-sm">Small Button</button>
-        <p>.btn-se-md</p>
-        <button class="btn-se-md">Semi Medium Button</button>
-        <p>.btn-md</p>
-        <button class="btn-md">Medium Button</button>
-        <p>.btn-lg</p>
-        <button class="btn-lg">Large Button</button>
-        <p>.btn-fs</p>
-        <button class="btn-fs">Full Size Button</button>
+
+<body id="bac">
+    <div id="head">
+        <h1 id="logo">Hello<span>Cinema.</span></h1>
+        <a class="active" href="login.html">log in</a>
+        <a href="#">sign up</a>
+        <a href="#">Home page</a>
+        <audio id="sou" autoplay muted loop src="media/a3tona.mp3" type="audio/mpeg"></audio>
     </div>
-    
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(206, 206, 206);">
-        <p class="fw-100">.fw-100</p>
-        <p class="fw-200">.fw-200</p>
-        <p class="fw-300">.fw-300</p>
-        <p class="fw-400">.fw-400</p>
-        <p class="fw-500">.fw-500</p>
-        <p class="fw-600">.fw-600</p>
-        <p class="fw-700">.fw-700</p>
+    <div id="L">
+        <h1>Log in</h1>
+        <form name="myform" action="index.html" method="post" target="_self" onsubmit=" validateForm()">
+            <label for="gmail">Gmail</label>
+            <input type="email" id="gmail" placeholder="      @gmail.com" required><br>
+            <label for="pass">Password</label>
+            <div>
+                <input name="fpass" type="password" id="pass" placeholder="Enter password" required>
+                <span class="show" id="showhide"> Display</span>
+            </div>
+            <input type="submit" value="Submit" id="sub">
     </div>
-
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(206, 206, 206);">
-        <p class="ft-1">.ft-1</p>
-        <p class="ft-115">.ft-115</p>
-        <p class="ft-125">.ft-125</p>
-        <p class="ft-135">.ft-135</p>
-        <p class="ft-145">.ft-145</p>
-        <p class="ft-15">.ft-15</p>
-        <p class="ft-175">.ft-175</p>
-        <p class="ft-185">.ft-185</p>
-        <p class="ft-2">.ft-2</p>
+    </section>
+    <section id="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    <div class="CRight">
+        <p>&#169;Shimaa All Right Reserved</p>
     </div>
-
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(206, 206, 206);">
-        <p>BTN colors</p>
-        <p class="ft-1">.btn-thm-1</p>
-        <button class="btn-thm-1 btn-se-md">btn-thm-1</button>
-        <p class="ft-1">.btn-thm-2</p>
-        <button class="btn-thm-2 btn-se-md">btn-thm-2</button>
-        <p class="ft-1">.btn-thm-3</p>
-        <button class="btn-thm-3 btn-se-md">btn-thm-3</button>
-        <p class="ft-1">.btn-thm-4</p>
-        <button class="btn-thm-4 btn-se-md">btn-thm-4</button>
-        <p class="ft-1">.btn-thm-1.outline</p>
-        <button class="btn-thm-1 btn-se-md outline">btn-thm-1.outline</button>
-        <p class="ft-1">.btn-thm-2.outline</p>
-        <button class="btn-thm-2 btn-se-md outline">btn-thm-2.outline</button>
-
-        <p class="ft-1">.btn-del</p>
-        <button class="btn-del btn-se-md">btn-del</button>
-        <p class="ft-1">.btn-warn</p>
-        <button class="btn-warn btn-se-md">btn-warn</button>
-        <p class="ft-1">.btn-warn</p>
-        <button class="btn-success btn-se-md">btn-success</button>
-    </div>
-
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(206, 206, 206);">
-        <p>text colors</p>
-        <p class="txt-primary">.txt-primary</p>
-        <p class="txt-primary-dk">.txt-primary-dk</p>
-        <p class="txt-primary-bl">.txt-primary-bl</p>
-    </div>
-    <p class="txt-secondary">.txt-secondary</p>
-    <p class="txt-secondary-20">.txt-secondary-20</p>
-    <p class="txt-secondary-30">.txt-secondary-30</p>
-    <p class="txt-secondary-40">.txt-secondary-40</p>
-
-
-    <div style="background-color: rgb(206, 206, 206);">
-        <p>Center Title</p>
-        <h1 class="title">.title</h1>
-    </div>
-
-
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(206, 206, 206);">
-        <p>Links</p>
-        <a href="" class="link-primary">.link-primary</a>
-        <a href="" class="link-primary-dk">.link-primary-dk</a>
-    </div>
-    <a href="" class="link-secondary">.link-secondary</a>
-
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(206, 206, 206);">
-        <p>Links as Button</p>
-        <p>BTN colors</p>
-        <p class="ft-1">.btn-thm-1</p>
-        <button class="btnlink btn-thm-1 btn-se-md">btn-thm-1</button>
-        <p class="ft-1">.btn-thm-2</p>
-        <button class="btnlink btn-thm-2 btn-se-md">btn-thm-2</button>
-        <p class="ft-1">.btn-thm-3</p>
-        <button class="btnlink btn-thm-3 btn-se-md">btn-thm-3</button>
-        <p class="ft-1">.btn-thm-4</p>
-        <button class="btnlink btn-thm-4 btn-se-md">btn-thm-4</button>
-        <p class="ft-1">.btn-thm-1.outline</p>
-        <button class="btnlink btn-thm-1 btn-se-md outline">btn-thm-1.outline</button>
-        <p class="ft-1">.btn-thm-2.outline</p>
-        <button class="btnlink btn-thm-2 btn-se-md outline">btn-thm-2.outline</button>
-    </div>
-
-
-
-    <p class="txt-secondary">.box-collection.two</p>
-    <div class="box-collection two">
-        <div class="child" style="background-color: aqua;">.child</div>
-        <div class="child" style="background-color: rgb(0, 255, 21);">.child</div>
-    </div>
-
-    <p class="txt-secondary">.box-collection.three</p>
-    <div class="box-collection three">
-        <div class="child" style="background-color: aqua;">.child</div>
-        <div class="child" style="background-color: rgb(0, 255, 21);">.child</div>
-        <div class="child" style="background-color: rgb(137, 7, 76);">.child</div>
-    </div>
-
-    <p class="txt-secondary">.box-collection.four</p>
-    <div class="box-collection four">
-        <div class="child" style="background-color: aqua;">.child</div>
-        <div class="child" style="background-color: rgb(0, 255, 21);">.child</div>
-        <div class="child" style="background-color: aqua;">.child</div>
-        <div class="child" style="background-color: rgb(0, 255, 21);">.child</div>
-    </div>
-
-    <br><br>
-
-    <div class="bg-wt p-30">.bg-wt</div>
-    <div class="bg-wt-20 p-30">.bg-wt-20</div>
-    <div class="bg-wt-30 p-30">.bg-wt-30</div>
-    <div class="bg-prim10 p-30">.bg-prim10</div>
-    <div class="bg-prim20 p-30">.bg-prim20</div>
-
-    <br><br>
-
-    <hr style="border-width: 5px;">
-
-
-    <h1 class="title txt-secondary">padding</h1>
-    <hr style="border-width: 5px;">
-    <div style="background-color: rgb(242, 242, 242);">
-        <div class="txt-primary p-10" style="background-color: aqua;">.p-10</div>
-        <br>
-        <div class="txt-primary p-20" style="background-color: aqua;">.p-20</div>
-        <br>
-        <div class="txt-primary p-30" style="background-color: aqua;">.p-30</div>
-        <br>
-        <br>
-        <div class="txt-primary pt-10" style="background-color: aqua;">.pt-10</div>
-        <br>
-        <div class="txt-primary pt-20" style="background-color: aqua;">.pt-20</div>
-        <br>
-        <div class="txt-primary pt-30" style="background-color: aqua;">.pt-30</div>
-        <br>
-        <br>
-        <div class="txt-primary pb-10" style="background-color: aqua;">.pb-10</div>
-        <br>
-        <div class="txt-primary pb-20" style="background-color: aqua;">.pb-20</div>
-        <br>
-        <div class="txt-primary pb-30" style="background-color: aqua;">.pb-30</div>
-        <br>
-        <br>
-        <div class="txt-primary pl-10" style="background-color: aqua;">.pl-10</div>
-        <br>
-        <div class="txt-primary pl-20" style="background-color: aqua;">.pl-20</div>
-        <br>
-        <div class="txt-primary pl-30" style="background-color: aqua;">.pl-30</div>
-        <br>
-        <br>
-        <div class="txt-primary pr-10" style="background-color: aqua; text-align: right;">.pr-10</div>
-        <br>
-        <div class="txt-primary pr-20" style="background-color: aqua; text-align: right;">.pr-20</div>
-        <br>
-        <div class="txt-primary pr-30" style="background-color: aqua; text-align: right;">.pr-30</div>
-    </div>
-
-    <br><br>
-    <hr style="border-width: 5px;">
-
-    <h1 class="title txt-secondary">Table</h1>
-    <table class="content-table">
-        <thead>
-            <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>Points</th>
-                <th>Team</th>
-                <th>Control</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Domenic</td>
-                <td>88,110</td>
-                <td>dcode</td>
-                <td>
-                    <button class="btn-sm btn-thm-1 fw-500 ft-1">button</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Sally</td>
-                <td>72,400</td>
-                <td>Students</td>
-                <td>
-                    <button class="btn-sm btn-thm-1 fw-500">button</button>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Nick</td>
-                <td>52,300</td>
-                <td>dcode</td>
-                <td>
-                    <button class="btn-sm btn-del">button</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
+    </section>
 </body>
+
 </html>
+
+
+<script>
+
+    const field_pass = document.getElementById('pass');
+    const field_show = document.getElementById('showhide');
+
+    function validateForm() {
+        let x = document.forms["myform"]["fpass"].value;
+        if (x.length >= 8 && x.length <= 16) {
+
+        }
+        else {
+            alert("Password must be minlength=8 maxlength=16");
+
+        }
+    }
+
+    function secret() {
+        if (field_pass.getAttribute("type") == "password") {
+            field_pass.type = "text";
+            field_show.textContent = "Hide";
+            field_show.style.color = "#3498db";
+        } else {
+            field_pass.type = "password";
+            field_show.textContent = "Display";
+            field_show.style.color = "#222"
+        }
+    }
+
+    field_show.addEventListener('click', secret);
+</script>
