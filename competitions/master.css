@@ -27,7 +27,7 @@ h2,h1,h3{
 .img{
     width: 100%;
     background-size:cover;  
-    margin-bottom:50px;
+    margin-bottom:20px;
 }
 .left{
     margin-right: 15px;
@@ -50,14 +50,21 @@ table,th,td{
 table{
     width:100%;
 }
-td,th{
+td{
     /* width:20%; */
-    /* padding: 2%; */
+    padding: 0 10px;
+    color:var(--secondary20);
+}
+th{
+    /* width:20%; */
+    padding: 15px;
     color:var(--secondary20);
 }
 h1{
     display: flex;
     justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 li,td,th{
     /* font-size: 25px; */

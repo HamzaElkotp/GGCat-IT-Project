@@ -1,20 +1,26 @@
-document.getElementById("butt").onclick = function () { myfunction() };
+let register = document.getElementById("butt")
+register.onclick = function () { myfunction() };
 let id = document.querySelector("[contID]").getAttribute("contID");
 
-function myfunction() {
-    let contests = localStorage.getItem("contests");
-    // check if it is empty or null
-    // if null create newone
-    // if not null, so you have array push to array
-    // push array to localstorage
-    if (contests == null) {
-        contests = [];
-    } else {
-        contests = JSON.parse(contests);
+
+let contests = localStorage.getItem("contests");
+if (contests == null) {
+    contests = [];
+}
+else {
+    contests = JSON.parse(contests);
+    if(contests.includes(id)){
+        register.textContent = "You have registered Before";
+        register.setAttribute("disabled", "disabled");
     }
-    contests.push(id);
-    localStorage.setItem("contests", JSON.stringify(contests));
-    alert("You are registered successfully to Contest");
+}
+
+function myfunction() {
+    if(!contests.includes(id)){
+        contests.push(id);
+        localStorage.setItem("contests", JSON.stringify(contests));
+        alert("You are registered successfully to Contest");
+    }
 }
 
 
@@ -33,7 +39,7 @@ fetch('/src/API/contest.json')
 .then(async (response) => {
     let fulldata = await response.json();
 
-    console.log(fulldata);
+    // console.log(fulldata);
 
     let data;
 
@@ -61,7 +67,7 @@ fetch('/src/API/contest.json')
             </tr>
         `
     });
-    console.log( data.agenda);
+    // console.log( data.agenda);
     // console.log(myfav);
     return response.json();
 })
