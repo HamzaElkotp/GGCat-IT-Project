@@ -1,0 +1,14 @@
+.table{
+    position: relative;
+    top:190px;
+}
+#p1{
+    font-size: 4.7em;
+    position: relative;
+    
+    color:white;
+   text-shadow: 3px 3px 5px blueviolet;
+    bottom:80px;
+    border: solid blueviolet;
+    border-radius: 17px ;
+}

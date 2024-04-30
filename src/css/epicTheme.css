@@ -64,7 +64,7 @@
     width: 85%;
 }
 .box.w-80{
-    width: 80%;
+    width: 70%;
 }
 .box.w-75{
     width: 75%;
@@ -99,6 +99,9 @@
 .img-65{
     width: 65%;
 }
+.img-60{
+    width: 60%;
+}
 .img-55{
     width: 55%;
 }
@@ -107,6 +110,9 @@
 }
 .img-45{
     width: 45%;
+}
+.img-40{
+    width: 40%;
 }
 .img-35{
     width: 35%;
