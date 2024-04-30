@@ -1,105 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Welcome to GGCat</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen'
-      href='/src/css/epicTheme.css'>
-    <link rel='stylesheet' type='text/css' media='screen'
-      href='/src/css/global.css'>
-    <link rel="stylesheet" type="text/css" media="screen"
-      href="/src/css/home.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='/src/css/all.min.css'>
-  </head>
-  <body>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Welcome to GGCat</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/src/css/epicTheme.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/src/css/global.css'>
+  <link rel="stylesheet" type="text/css" media="screen" href="/src/css/home.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='/src/css/all.min.css'>
+</head>
 
-    <header id="header">
-        
-    </header>
+<body>
 
-    <div class="box-holder">
-      <div class="box w-90 p-0 hcenter">
-           <section class="part1">
-             <video autoplay muted  loop id="video-bg">
-               <source src="/assets/vids/IT project - Made with Clipchamp.mp4"
-                 type="video/mp4">
-             </video>
-             <h1 class="zone">(\_/)<br>(^.^)<br>/><span>GAME ZONE</span></h1>
-             <div class="content">
-               <h1>EPIC GAMES MADE FOR TRUE GAMERS !</h1>
-               <div class="cot">
-                 <a href="/auth/index.html">
-                   <button   class="button"> join us</button>
-                 </a>
-               </div>
-             </div>
-           </section>
+  <header id="header"></header>
 
-           <section class="part2">
-            <a href="/games/12345/index.html">
-             <div class="card1">
-               <div class="game">
-                 <img  src="/assets/images/WhatsApp Image 2024-04-28 at 19.10.30_dd4e6edb.jpg">
-                 <div class="info1">
-                      <h1>FORTNITE</h1>
-                     <p>Genres: Action<br>Features: Co-op,Single Player</p>
-                    
-                 </div>
-               </div>
-             </div>
-            </a> 
-             <a href="/games/20393/index.html">
-              <div class="card1 card2">
-                <div class="game">
-                  <img  src="/assets/images/fg5.jpg">
-                  <div class="info1">
-                       <h1>FALL GUYS</h1>
-                      <p>Genres: Battle royale, platform<br>Features: Co-op,Single Player</p>
-                     
-                        
-                    
-                  </div>
-                </div>
-              </div>
+  <div class="box-holder">
+    <div class="box w-90 p-0 hcenter">
+      <section class="part1">
+        <video autoplay muted loop id="video-bg">
+          <source src="/assets/vids/IT project - Made with Clipchamp.mp4" type="video/mp4">
+        </video>
+        <h1 class="zone">(\_/)<br>(^.^)<br>/><span>GAME ZONE</span></h1>
+        <div class="content">
+          <h1>EPIC GAMES MADE FOR TRUE GAMERS !</h1>
+          <div class="cot">
+            <a href="/auth/index.html">
+              <button class="button"> join us</button>
             </a>
+          </div>
+        </div>
+      </section>
 
-            <a href="/games/78398/index.html">
-              <div class="card1 card3">
-                <div class="game">
-                  <img  src="/assets/images/rocketleague3.jpg">
-                  <div class="info1">
-                       <h1>ROCKET LEAGUE</h1>
-                      <p>Genres: Sports<br>Features: Co-op,Single Player</p>
-                     
-                        
-                    
-                  </div>
-                </div>
-              </div>
-            </a>
-            </section>
-            <section class="part3">
-              <div class="slideshow-container">
-                <div class="slide fade">
-                  <img  src="/assets/images/img1.jpg" alt="Photo 1">
-                </div>
-                <div class="slide fade">
-                  <img  src="/assets/images/img2.jpg" alt="Photo 2">
-                </div>
-                <div class="slide fade">
-                  <img  src="/assets/images/img3.jpg" alt="Photo 3">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-            </section>
-     </div>
-   </div>
-    <footer id="header"></footer>
+      <input type="search" placeholder="Search by game name" id="search">
 
-  </body>
+      <section class="part2">
+        <a href="/games/12345/index.html" id="12345">
+          <div class="card1">
+            <div class="game">
+              <img src="/assets/images/WhatsApp Image 2024-04-28 at 19.10.30_dd4e6edb.jpg">
+              <div class="info1">
+                <h1 searchItem="12345">FORTNITE</h1>
+                <p>Genres: Action<br>Features: Co-op,Single Player</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/games/20393/index.html" id="20393">
+          <div class="card1 card2">
+            <div class="game">
+              <img src="/assets/images/fg5.jpg">
+              <div class="info1">
+                <h1 searchItem="20393">FALL GUYS</h1>
+                <p>Genres: Battle royale, platform<br>Features: Co-op,Single Player</p>
+
+
+
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="/games/78398/index.html" id="78398">
+          <div class="card1 card3">
+            <div class="game">
+              <img src="/assets/images/rocketleague3.jpg">
+              <div class="info1">
+                <h1 searchItem="78398">ROCKET LEAGUE</h1>
+                <p>Genres: Sports<br>Features: Co-op,Single Player</p>
+
+
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <section class="part3">
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="/assets/images/img1.jpg" alt="Photo 1">
+          </div>
+          <div class="slide fade">
+            <img src="/assets/images/img2.jpg" alt="Photo 2">
+          </div>
+          <div class="slide fade">
+            <img src="/assets/images/img3.jpg" alt="Photo 3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer id="footer"></footer>
+
+</body>
+
 </html>
 <script src='/src/scripts/main.js'></script>
-<script src='/src/scripts/slide.js'></script>
+<script src='/src/scripts/home.js'></script>

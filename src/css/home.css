@@ -167,3 +167,8 @@ a{
   .next {
     right: 0;
   }
+
+
+.part2 .hide{
+    display: none;
+}
