@@ -35,8 +35,8 @@ function readData(){
         feeds.innerHTML += `
             <div class="feed_box p-20 br-30" id="${review.id}">
                 <div class="info">
-                    <h4>${review.gamename}</h4>
-                    <h4>${review.rate}/10&#11088;</h4>
+                    <h4 class="ft-135">${review.gamename}</h4>
+                    <h4 class="ft-135">${review.rate}/10&#11088;</h4>
                 </div>
                 <div class="review">
                     <p>${review.desc}</p>
