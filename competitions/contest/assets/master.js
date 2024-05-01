@@ -35,7 +35,7 @@ let pdate = document.getElementById("pdate");
 let pdiscription = document.getElementById("pdiscription");
 
 
-fetch('/src/API/contest.json')
+fetch('/GGCat-IT-Project/src/API/contest.json')
 .then(async (response) => {
     let fulldata = await response.json();
 

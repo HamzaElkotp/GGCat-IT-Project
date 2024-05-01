@@ -77,7 +77,7 @@ let game2description= document.getElementById("game2description");
 let banner2 = document.getElementById("game2img");
 
 
-fetch('/src/API/contest.json')
+fetch('/GGCat-IT-Project/src/API/contest.json')
 .then(async(response)=>{
     let fulldata = await response.json();
     
