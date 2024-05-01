@@ -276,7 +276,7 @@ button {
     font-size: 14px;
 }
 
-input:not(label input) {
+input:not(label input), textarea, select {
     width: 100%;
     font-size: 16px;
     padding: 10px;
@@ -286,12 +286,12 @@ input:not(label input) {
     color: var(--secondary40);
 }
 
-input:focus {
+input:focus, textarea, select {
     border: 2px solid var(--primary10);
     outline: transparent;
 }
 
-input::placeholder {
+input::placeholder, textarea, select {
     color: var(--secondary10);
     font-size: 13px;
     font-weight: 500;
@@ -386,3 +386,26 @@ fieldset{
     text-align: center;
     color: var(--secondary20);
 }
+
+
+.sidebarCont{
+    display: inline-block;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  padding: 20px;
+  background-color: var(--primary30);
+  top: 0;
+}
+.sidebarCont a{
+    display: block;
+  padding: 15px 20px;
+  color: var(--secondary20);
+  text-decoration: none;
+  font-size: 21px;
+}
+.db-holder {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+  }

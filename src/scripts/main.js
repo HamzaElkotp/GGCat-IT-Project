@@ -157,20 +157,27 @@ if(theme == "light"){
     let sidebarA = document.querySelector('#sidebarA');
 
     if(sidebar){
-        footer.innerHTML += 
+        console.log(1)
+        sidebar.innerHTML += 
         `
-            <div class="p-20 footer">
-                <a href="/GGCat-IT-Project/">Home</a>
-                <a href="/GGCat-IT-Project/myprofile/">Control</a>
-            </div>
+        <div class="sidebarCont">
+        <a href="/GGCat-IT-Project/">Home</a>
+        <a href="/GGCat-IT-Project/myprofile/">Control</a>
+        <a href="/GGCat-IT-Project/myprofile/newfeedback/">New Feedbacks</a>
+        <a href="/GGCat-IT-Project/myprofile/myfeedbacks/">My Feedbacks</a>
+        <a href="/GGCat-IT-Project/myprofile/myfavorites/">New Favorites</a>
+        <a href="/GGCat-IT-Project/myprofile/mycontests/">New Contests</a>
+    </div>
         `;
     }
 
     if(sidebarA){
-        footer.innerHTML += 
+        sidebarA.innerHTML += 
         `
-            <div class="p-20 footer">
-                <p>All rights Are Reversed ${year}</p>
+            <div class="sidebarCont">
+                <a href="/GGCat-IT-Project/">Home</a>
+                <a href="/GGCat-IT-Project/admin/">Control</a>
+                <a href="/GGCat-IT-Project/admin/feedbacks/">Feedbacks</a>
             </div>
         `;
     }

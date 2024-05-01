@@ -302,3 +302,7 @@ table *{
     width: calc(50% - 10px);
 
 }
+
+.sidebarCont a{
+  color: var(--bg100);
+}
