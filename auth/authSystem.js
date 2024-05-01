@@ -6,9 +6,9 @@ function redirect(){
     } else{
         let data = JSON.parse(window.sessionStorage.getItem('loginCredentials'));
         if(data.type == "Admin"){
-            window.location = `/admin`
+            window.location = `/GGCat-IT-Project/admin`
         } else{
-            window.location = `/myprofile`
+            window.location = `/GGCat-IT-Project/myprofile`
         }
     }
 }

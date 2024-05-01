@@ -149,3 +149,29 @@ if(theme == "light"){
         `;
     }
 }());
+
+
+
+(function sidebarsLoader(){
+    let sidebar = document.querySelector('#sidebar');
+    let sidebarA = document.querySelector('#sidebarA');
+
+    if(sidebar){
+        footer.innerHTML += 
+        `
+            <div class="p-20 footer">
+                <a href="/GGCat-IT-Project/">Home</a>
+                <a href="/GGCat-IT-Project/myprofile/">Control</a>
+            </div>
+        `;
+    }
+
+    if(sidebarA){
+        footer.innerHTML += 
+        `
+            <div class="p-20 footer">
+                <p>All rights Are Reversed ${year}</p>
+            </div>
+        `;
+    }
+}());
