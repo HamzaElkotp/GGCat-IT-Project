@@ -126,11 +126,11 @@ function navBarActivator(){
 
 if(theme == "light"){
     lightThemeActivator();
-    document.getElementById('sun').classList.add('hide');
-    document.getElementById('moon').classList.remove('hide');
+    document.getElementById('sun')?.classList.add('hide');
+    document.getElementById('moon')?.classList.remove('hide');
 } else{
-    document.getElementById('sun').classList.remove('hide');
-    document.getElementById('moon').classList.add('hide');
+    document.getElementById('sun')?.classList.remove('hide');
+    document.getElementById('moon')?.classList.add('hide');
 }
 
 
