@@ -377,3 +377,11 @@ fieldset{
 .themeChoose i.hide{
     display: none;
 }
+
+
+
+.footer{
+    background-color: var(--bg60);
+    text-align: center;
+    color: var(--secondary20);
+}

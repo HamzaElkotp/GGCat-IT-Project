@@ -34,9 +34,9 @@
   body{
     font-family: "Reddit Mono", monospace;
     /* background: url('/assets/images/27893.jpg');  choose another one if you can */
-    background-size: cover;
+    /* background-size: cover;
     background-blend-mode: darken;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat ; */
    }
 
   .container{

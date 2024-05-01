@@ -40,20 +40,43 @@ const secureApp = composer(checkLoging, redirectToLoggin);
 }());
 
 
+let theme = localStorage.getItem('theme') || "";
 
 
-function themeActivator(){
-
+function lightThemeActivator(){
+    let linkNodes = [...document.getElementsByTagName('link')];
+    linkNodes.forEach((ele)=>{
+        if(ele.getAttribute("href").includes('epicTheme')){
+            let path = ele.getAttribute("href");
+            path = path.replace('epicTheme', 'totoTheme');
+            ele.setAttribute("href", path);
+        }
+    })
+    localStorage.setItem('theme', 'light');
 }
+function darkThemeActivator(){
+    let linkNodes = [...document.getElementsByTagName('link')];
+    linkNodes.forEach((ele)=>{
+        if(ele.getAttribute("href").includes('totoTheme')){
+            let path = ele.getAttribute("href");
+            path = path.replace('totoTheme', 'epicTheme');
+            ele.setAttribute("href", path);
+        }
+    })
+    localStorage.setItem('theme', 'dark');
+}
+
 
 function navBarActivator(){
     document.getElementById('sun').addEventListener('click', ()=>{
-        document.getElementById('moon').classList.add('hide');
-        document.getElementById('sun').classList.remove('hide');
+        document.getElementById('moon').classList.remove('hide');
+        document.getElementById('sun').classList.add('hide');
+        lightThemeActivator();
     })
     document.getElementById('moon').addEventListener('click', ()=>{
-        document.getElementById('sun').classList.add('hide');
-        document.getElementById('moon').classList.remove('hide');
+        document.getElementById('sun').classList.remove('hide');
+        document.getElementById('moon').classList.add('hide');
+        darkThemeActivator();
     })
 
     let login = sessionStorage.getItem('loginCredentials');
@@ -77,33 +100,52 @@ function navBarActivator(){
 
 (function navBarLoader(){
     let nav = document.querySelector('#header');
-    nav.innerHTML += 
-    `
-    <div class="header">
-        <span href="#default" class="logo"><span class="gg">GG</span>Cat</span>
-        <div class="header-right">
-            <span class="allLinks">
-                <a href="/"><i class="fas fa-home"></i> Home</a>
-                <a href="/rank"><i class="fas fa-trophy"></i> Ranks</a>
-                <a href="/competitions/"><i class="fas fa-trophy"></i> Contests</a>
-                <a href="/auth" id="auth"><i class="fas fa-medal"></i> Login/Join</a>
-                <a href="/" id="dashboard" class="active"><i class="fas fa-columns"></i> Dashboard</a>
-            </span>
-            <span class="themeChoose">
-                <i class="far fa-sun" id="sun"></i>
-                <i class="far fa-moon" id="moon"></i>
-            </span>
-        </div>
-    </div>
-    `;
-    navBarActivator();
+    if(nav){
+        nav.innerHTML += 
+        `
+            <div class="header">
+                <span href="#default" class="logo"><span class="gg">GG</span>Cat</span>
+                <div class="header-right">
+                    <span class="allLinks">
+                        <a href="/"><i class="fas fa-home"></i> Home</a>
+                        <a href="/rank"><i class="fas fa-trophy"></i> Ranks</a>
+                        <a href="/competitions/"><i class="fas fa-trophy"></i> Contests</a>
+                        <a href="/auth" id="auth"><i class="fas fa-medal"></i> Login/Join</a>
+                        <a href="/" id="dashboard" class="active"><i class="fas fa-columns"></i> Dashboard</a>
+                    </span>
+                    <span class="themeChoose">
+                        <i class="far fa-sun hide" id="sun"></i>
+                        <i class="far fa-moon" id="moon"></i>
+                    </span>
+                </div>
+            </div>
+        `;
+        navBarActivator();
+    }
 }());
 
-// (function footerLoader(){
-//     let footer = document.querySelector('#footer');
-//     footer?.innerHTML += 
-//     `
-        
+if(theme == "light"){
+    lightThemeActivator();
+    document.getElementById('sun').classList.add('hide');
+    document.getElementById('moon').classList.remove('hide');
+} else{
+    document.getElementById('sun').classList.remove('hide');
+    document.getElementById('moon').classList.add('hide');
+}
 
-//     `;
-// }());
+
+
+(function footerLoader(){
+    let footer = document.querySelector('#footer');
+    let date = new Date();
+    let year = date.getFullYear();
+
+    if(footer){
+        footer.innerHTML += 
+        `
+            <div class="p-20 footer">
+                <p>All rights Are Reversed ${year}</p>
+            </div>
+        `;
+    }
+}());
