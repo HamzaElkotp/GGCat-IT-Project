@@ -104,14 +104,14 @@ function navBarActivator(){
         nav.innerHTML += 
         `
             <div class="header">
-                <span href="GGCat-IT-Project#default" class="logo"><span class="gg">GG</span>Cat</span>
+                <span href="/GGCat-IT-Project#default" class="logo"><span class="gg">GG</span>Cat</span>
                 <div class="header-right">
                     <span class="allLinks">
-                        <a href="GGCat-IT-Project/"><i class="fas fa-home"></i> Home</a>
-                        <a href="GGCat-IT-Project/rank"><i class="fas fa-trophy"></i> Ranks</a>
-                        <a href="GGCat-IT-Project/competitions/"><i class="fas fa-trophy"></i> Contests</a>
-                        <a href="GGCat-IT-Project/auth" id="auth"><i class="fas fa-medal"></i> Login/Join</a>
-                        <a href="GGCat-IT-Project/" id="dashboard" class="active"><i class="fas fa-columns"></i> Dashboard</a>
+                        <a href="/GGCat-IT-Project/"><i class="fas fa-home"></i> Home</a>
+                        <a href="/GGCat-IT-Project/rank"><i class="fas fa-trophy"></i> Ranks</a>
+                        <a href="/GGCat-IT-Project/competitions/"><i class="fas fa-trophy"></i> Contests</a>
+                        <a href="/GGCat-IT-Project/auth" id="auth"><i class="fas fa-medal"></i> Login/Join</a>
+                        <a href="/GGCat-IT-Project/" id="dashboard" class="active"><i class="fas fa-columns"></i> Dashboard</a>
                     </span>
                     <span class="themeChoose">
                         <i class="far fa-sun hide" id="sun"></i>
