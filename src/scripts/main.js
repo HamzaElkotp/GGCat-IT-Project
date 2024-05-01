@@ -10,7 +10,7 @@ async function checkLoging(){
 }
 function redirectToLoggin(status){
     if(status){
-        window.location = `/auth/?redirect=${window.location.pathname}`;
+        window.location = `/GGCat-IT-Project/auth/?redirect=${window.location.pathname}`;
     }
     return 0;
 }
@@ -86,9 +86,9 @@ function navBarActivator(){
         if(data.loging){
             document.getElementById('auth').remove();
             if(data.type == "Admin"){
-                document.getElementById('dashboard').setAttribute('href', '/admin');
+                document.getElementById('dashboard').setAttribute('href', '/GGCat-IT-Project/admin');
             } else{
-                document.getElementById('dashboard').setAttribute('href', '/myprofile');
+                document.getElementById('dashboard').setAttribute('href', '/GGCat-IT-Project/myprofile');
             }
         } else{
             document.getElementById('dashboard').remove();
