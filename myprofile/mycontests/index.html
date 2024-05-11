@@ -74,9 +74,7 @@
             <h1 class="title txt-secondary-30">Upcoming competitions</h1>
             <table id="table-data">
                 <tr>
-                    <td>name</td>
-                    <td>start </td>
-                    <td>end</td>
+                    <td>Contest id</td>
                     <td>control</td>
                 </tr>
                 <tbody id="body">
@@ -97,26 +95,25 @@
     });
 
     function populateTable() {
-        var data = JSON.parse(localStorage.getItem("userData")) || [];
+        var data = JSON.parse(localStorage.getItem("contests")) || [];
         var tableBody = document.getElementById("body");
         tableBody.innerHTML = "";
         data.forEach(function (item, index) {
             var row = document.createElement("tr");
             row.innerHTML = `
-            <td>${item.name}</td>
-            <td>${item.start}</td>
-            <td>${item.end}</td>
+            <td>${item}</td>
             <td><button onclick="deleteItem(${index})">Delete</button></td>
         `;
             tableBody.appendChild(row);
         });
     }
     function deleteItem(index) {
-        var data = JSON.parse(localStorage.getItem("userData")) || [];
+        console.log(index);
+        let data = JSON.parse(localStorage.getItem("contests")) || [];
         data.splice(index, 1);
-        localStorage.setItem("userData", JSON.stringify(data));
+        localStorage.setItem("contests", JSON.stringify(data));
         populateTable();
     }
-    window.localStorage.name = 1111111;
+    // window.localStorage.name = 1111111;
 
 </script>
