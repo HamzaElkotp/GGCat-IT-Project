@@ -11,13 +11,18 @@
 }
 
 .table1{
-    position: absolute;
+    margin-top: 30px;
+
+    /* position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    margin-top: 30px;
-    width: 80%;
-    height: 60%;
+    
+    width: 80%;*/
+    height: 100%; 
+}
+.table1 *{
+    padding: 20px;
 }
 table ,tr ,td {
     border: 1px  solid #7c13ff;
@@ -38,13 +43,13 @@ tr,td{
     background-color: #7c13ff;
 }
 #table-data{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 300px;
-    width:80%;
-    height: auto;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* margin-top: 300px; */
+    width:100%;
+    /* height: auto; */
 }
 .h2{
     font-size: 30px;
