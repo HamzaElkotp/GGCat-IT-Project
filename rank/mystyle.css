@@ -42,8 +42,10 @@
   .container{
   margin-left: 10%;
   margin-top: 22%;
+  margin-right: 0;
   padding-bottom: 50px;
   line-height: 0.5em;
+  display: inline-block;
   }
   
   .h1{
@@ -51,7 +53,7 @@
   font-weight: bold;
   padding-bottom: 5%;
   /* font-size: 100px; */
-  word-spacing: -20px;
+  word-spacing: 20px;
   text-shadow: 1px 1px 1px #d1d1d1;
   }
   
@@ -66,7 +68,7 @@
   }
   
   .button{
-  position: absolute;
+  /* position: absolute; */
   padding: 20px 35px;
   left: 24%;
   top: 72%;
@@ -88,12 +90,13 @@
   }
   
   .card{
-  position: absolute;
-  left:58%;
-  top: 28%;
+  /* position: absolute; */
+  /* left:58%; */
+  /* top: 28%; */
   background-color: #fff;
   border-radius: 45px;
   filter: grayscale(100%);
+  display: initial;
   }
   
   .card img{
@@ -124,7 +127,7 @@
 
   .hd1{
     color: var(--primary10);
-    margin-left: 10%;
+    /* margin-left: 10%; */
     font-size: 60px;
     font-weight: bold;
     word-spacing: -20px;
@@ -132,16 +135,16 @@
   border-radius: 55px;
   border-style: none;
   padding: 20px;
-  width: 16%;
+  width: 100%;
   }
 
   
   .rankgamers, td, th{
     text-align: center;
-    width: 35%;
+    width: 100%;
     font-size: 3.5rem;
     color: #fff;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     border: #391660 2px solid;   
     word-spacing: -20px;
   }
@@ -190,7 +193,7 @@
   
   .hd2{
     color: var(--primary10);
-    margin-left: 10%;
+    /* margin-left: 10%; */
     font-size: 60px;
     font-weight: bold;
     word-spacing: -20px;
@@ -198,15 +201,15 @@
   border-radius: 55px;
   border-style: none;
   padding: 20px;
-  width: 15%;
+  width: 100%;
   }
   
   .rankgames, td, th{
     text-align: center;
-    width: 35%;
+    width: 100%;
     font-size: 3.5rem;
     color: #fff;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     border: #391660 2px solid;   
     word-spacing: -20px;
   }
@@ -224,7 +227,7 @@
       } 
   
   .top{
-    padding: 60px;
+    padding: 20px;
     font-weight: bold;
   }
   
@@ -243,6 +246,7 @@
     align-self: center;
    object-fit: contain;
    width:100%;
+   min-width: 700px;
    filter: grayscale(100%);
   }  
   
