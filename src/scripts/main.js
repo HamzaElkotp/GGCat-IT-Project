@@ -17,8 +17,6 @@ function redirectToLoggin(status){
 
 
 
-
-
 const composer = function(...functions) {
     return async function(...value) {
         let result = value;
