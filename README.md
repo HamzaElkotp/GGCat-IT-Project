@@ -10,14 +10,20 @@
 
 
 ## How to Use
+
 1- Fork the project and make you own copy of repo
+
 2- Clone the forked project into your workspace
+
 3- Now you have the source code and can run it
+
 
 **NOTE**: if you are running project using live-server extesnion, make sure that all project is in folder called **GGCat-IT-Project** and opening the workspace outside it like this:
 
 ![image](https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/6ad8f1fa-720c-4420-8632-95ab199fce66)
 
+
+**Theme 1 Has doccumentation of all components and styles in**: <a href="https://github.com/HamzaElkotp/GGCat-IT-Project/doc.html">epicTheme.css</a>
 
 ## These are the most important Modules in the project
 - **Outh System & Logic**: <a href="https://github.com/HamzaElkotp/GGCat-IT-Project/tree/main/auth">Auth Forlder</a>
