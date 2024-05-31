@@ -2,7 +2,10 @@
   <img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/b5e59373-13ba-4dbe-9665-37a9f57af17a" width="160">
 </p>
   <h1>GGCat</h1> 
-  An IT project made with love - Gaming Website
+  An IT project made with love - Gaming Website 
+  
+  Developed by: <a href="https://github.com/HamzaElkotp">HamzaDev</a> <a href="https://github.com/sayedsaber2005">Sayed Saber</a> <a href="https://github.com/ZiadMahmoudas">Ziad Mahmoudas</a> <a href="https://github.com/David10203">David</a> <a href="https://github.com/d5ania">Dania</a> <a href="https://github.com/RanaAlaaMohamed">Rana Alaa Mohamed</a> <a href="https://github.com/rahiqkhalid12">Rahiq Khalid</a> <a href="https://github.com/Hatemalii">Hatem</a>
+  
   See <a href="https://hamzaelkotp.github.io/GGCat-IT-Project/">Project Demo</a>
 
 
