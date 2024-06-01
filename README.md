@@ -4,10 +4,11 @@
 
 <hr>
 <p align="center">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/0d1247d8-f25f-48f8-972c-f6aacd5c4e23" width="120">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/28206cf4-6674-4a6e-aa40-ca20e3b72cd2" width="120">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/32aa41a3-9a3e-44b4-a72e-683ba1db97eb" width="120">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/9e71d0ef-24a3-4ce5-8bfa-6cc0a20edde6" width="120">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/0d1247d8-f25f-48f8-972c-f6aacd5c4e23" height="110">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/28206cf4-6674-4a6e-aa40-ca20e3b72cd2" height="110">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/32aa41a3-9a3e-44b4-a72e-683ba1db97eb" height="110">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/9e71d0ef-24a3-4ce5-8bfa-6cc0a20edde6" height="110">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/7eef9124-1703-402d-98c8-837751e71a74" height="110">
 </p>
   Developed by: <a href="https://github.com/HamzaElkotp">HamzaDev</a> <a href="https://github.com/sayedsaber2005">Sayed Saber</a> <a href="https://github.com/ZiadMahmoudas">Ziad Mahmoudas</a> <a href="https://github.com/David10203">David</a> <a href="https://github.com/d5ania">Dania</a> <a href="https://github.com/RanaAlaaMohamed">Rana Alaa Mohamed</a> <a href="https://github.com/rahiqkhalid12">Rahiq Khalid</a> <a href="https://github.com/Hatemalii">Hatem</a>
 
