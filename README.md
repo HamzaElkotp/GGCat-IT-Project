@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/b5e59373-13ba-4dbe-9665-37a9f57af17a" width="160">
+  <img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/b5e59373-13ba-4dbe-9665-37a9f57af17a" width="200">
 </p>
 
 <hr>
