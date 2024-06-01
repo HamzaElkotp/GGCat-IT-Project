@@ -4,9 +4,10 @@
 
 <hr>
 <p align="center">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/0d1247d8-f25f-48f8-972c-f6aacd5c4e23" width="100">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/28206cf4-6674-4a6e-aa40-ca20e3b72cd2" width="100">
-<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/32aa41a3-9a3e-44b4-a72e-683ba1db97eb" width="100">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/0d1247d8-f25f-48f8-972c-f6aacd5c4e23" width="120">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/28206cf4-6674-4a6e-aa40-ca20e3b72cd2" width="120">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/32aa41a3-9a3e-44b4-a72e-683ba1db97eb" width="120">
+<img src="https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/9e71d0ef-24a3-4ce5-8bfa-6cc0a20edde6" width="120">
 </p>
 
   <h1>GGCat</h1> 
