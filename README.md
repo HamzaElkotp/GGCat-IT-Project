@@ -23,7 +23,7 @@
 ![image](https://github.com/HamzaElkotp/GGCat-IT-Project/assets/61008779/6ad8f1fa-720c-4420-8632-95ab199fce66)
 
 
-**Theme 1 Has doccumentation of all components and styles in**: <a href="https://github.com/HamzaElkotp/GGCat-IT-Project/doc.html">epicTheme.css</a>
+**Theme 1 Has doccumentation of all components and styles in**: <a href="https://github.com/HamzaElkotp/GGCat-IT-Project/blob/main/doc.html">doc.html</a>
 
 ## These are the most important Modules in the project
 - **Outh System & Logic**: <a href="https://github.com/HamzaElkotp/GGCat-IT-Project/tree/main/auth">Auth Forlder</a>
@@ -43,4 +43,6 @@
 - **Theme**:
 
   1- Light theme isn't applied correctelly in all pages.
+  
+  2- Not responsive with smaller screans.
   
